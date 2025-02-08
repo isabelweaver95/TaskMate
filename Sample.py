@@ -33,11 +33,13 @@ def convert_to_datetime(time_str):
     return datetime.strptime(time_str, "%H:%M")
 
 def calculate_task_end_time(start_time, time):
+    '''This function will calculate the end time of the task'''
     end_time = start_time + timedelta(hours=time)
 
     return end_time
 
 def fits_in_time_slot(task, start_time, end_time):
+    '''This function will check if the task can be done in the time slot'''
     task_end_time = calculate_task_end_time(start_time, task["time"])
     return task_end_time <= end_time
 
