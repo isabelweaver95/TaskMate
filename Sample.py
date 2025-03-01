@@ -72,40 +72,34 @@ def check_if_task_can_be_done(task, start_datetime, end_datetime):
 def calculate_amount_of_time(tasks, start_datetime, end_datetime):
     '''This function will calculate the amount of time it will take to complete all tasks'''
 
+    tasks.sort_tasks()
+
     incomplete_tasks = []  # Array to hold tasks that cannot be done in the time slot
     completed_tasks = Scheduler()   # Array to hold tasks that can be done in the time slot
 
-    for task in tasks[:]:  # Iterate over a copy of the list to avoid issues while modifying
+    for task in tasks.tasks:  # Iterate over a copy of the list to avoid issues while modifying
         amount_task_time = task.time
 
         if check_if_task_can_be_done(task, start_datetime, end_datetime):
+            print(f"'{task.name}' will start at {start_datetime}")
             start_datetime += amount_task_time
-            completed_tasks.append(task)  
-        else:
-            print(f"The task '{task.name}' cannot be done in the time slot.")
-            incomplete_tasks.append(task)
-            tasks.remove(task)  # Remove the task from the original list
-
-    if len(completed_tasks) > 0:
-        print("\nTasks that could be completed in the time slot:")
-        for task in completed_tasks:
             completed_tasks.add_task(task)
+            print(f"'{task.name}' will end at {start_datetime.strftime('%H:%M')}")
+        else:
+            #print(f"The task '{task.name}' cannot be done in the time slot.")
+            incomplete_tasks.append(task)
+            tasks.tasks.remove(task)  # Remove the task from the original list
+    
 
-
-    if len(incomplete_tasks) == 0:
-        print("\nTasks that could not be completed in the time slot:")
-        for task in incomplete_tasks:
-            print(task.name)
-        print("\n We have added breaks to your schedule to fill the time gap.")
-
+    return completed_tasks, incomplete_tasks
 
 def start_loop():
-    tasks = []  # Initialize an empty list to store tasks
+    tasks = Scheduler()  # Initialize an empty list to store tasks
     loops = int(input("Enter the number of tasks you would like to schedule: "))
     
     for i in range(loops):
         task = get_task_info()  # Get task info from the user
-        tasks.append(task)  # Add the task to the list
+        tasks.add_task(task)
 
     return tasks
 
