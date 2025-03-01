@@ -3,9 +3,9 @@ from datetime import datetime, timedelta
 class Task:
     PRIORITY_MAP = {"high": 3, "medium": 2, "low": 1}  # Mapping priority to numeric values
 
-    def __init__(self, name, duration, due_date, priority):
+    def __init__(self, name, time, due_date, priority):
         self.name = self.validate_name(name)
-        self.duration = self.validate_duration(duration)
+        self.time = self.validate_duration(time)
         self.priority = self.validate_priority(priority)
         self.due_date = self.convert_to_datetime(due_date)
         self.urgency = self.calculate_urgency()
@@ -19,14 +19,14 @@ class Task:
         return name
 
     @staticmethod
-    def validate_duration(duration):
+    def validate_duration(time):
         """Ensure duration is a positive number. and can be a timedelt object"""
         try:
-            duration = float(duration)
-            duration = timedelta(hours=duration)
+            time = float(time)
+            time = timedelta(hours=time)
         except ValueError:
             raise ValueError("Invalid duration. Enter a number greater than 0.")
-        return duration
+        return time
 
     @staticmethod
     def validate_priority(priority):
