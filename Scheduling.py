@@ -5,8 +5,8 @@ class Scheduler:
     def __init__(self, tasks, start_time, end_time):
         self.tasks = tasks
         self.breaks = False
-        self.start_time = self.convert_to_datetime(start_time)
-        self.end_time = self.convert_to_datetime(end_time)
+        self.start_time = start_time
+        self.end_time = end_time
 
     def add_task(self, task):
         self.tasks.append(task)
@@ -19,19 +19,36 @@ class Scheduler:
         for task in self.tasks:
             print(f"Task: {task.name}, Urgency: {task.urgency}, Due Date: {task.due_date}")
 
-def convert_to_datetime(self, time_str):
-    '''This converts the time string to a datetime object. 
-    The time string should be in the format "HH:MM" or "HH:MM AM/PM" '''
+    def calculate_task_end_time(self, start_time, duration):
+        '''Calculate the end time of a task'''
+        return start_time + duration
 
-    time_str = time_str.strip()
+    def fits_in_time_slot(self, task, current_time):
+        '''Check if the task can be done in the given time slot'''
+        task_end_time = self.calculate_task_end_time(current_time, task.time)
+        return task_end_time <= self.end_time
 
-    try:
-        return datetime.strptime(time_str, "%H:%M")
-    except ValueError:
-        try:
-            return datetime.strptime(time_str, "%I:%M %p")
-        except ValueError:
-            raise ValueError("Invalid time format")
-    
+    def check_if_task_can_be_done(self, task, current_time):
+        '''Check if a task can be completed within the scheduler's timeframe'''
+        return self.fits_in_time_slot(task, current_time)
 
-    return datetime.strptime(time_str, "%H:%M")
+    def calculate_amount_of_time(self):
+        '''Calculate the amount of time required to complete all tasks'''
+
+        incomplete_tasks = []  # Tasks that cannot be completed
+        completed_tasks = []   # Tasks that can be completed
+
+        current_time = self.start_time  # Track task start time
+
+        for task in list(self.tasks):  # Iterate over a copy of the list to avoid issues
+            task_duration = task.time  # Convert task time to timedelta
+
+            if self.fits_in_time_slot(task, current_time):
+                print(f"'{task.name}' will start at {current_time.strftime('%H:%M')}")
+                current_time += task_duration
+                completed_tasks.append(task)
+                print(f"'{task.name}' will end at {current_time.strftime('%H:%M')}")
+            else:
+                incomplete_tasks.append(task)
+
+        return completed_tasks, incomplete_tasks

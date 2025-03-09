@@ -94,12 +94,12 @@ def calculate_amount_of_time(tasks, start_datetime, end_datetime):
     return completed_tasks, incomplete_tasks
 
 def start_loop():
-    tasks = Scheduler()  # Initialize an empty list to store tasks
+    tasks = []
     loops = int(input("Enter the number of tasks you would like to schedule: "))
     
-    for i in range(loops):
+    for _ in range(loops):
         task = get_task_info()  # Get task info from the user
-        tasks.add_task(task)
+        tasks.append(task)
 
     return tasks
 
@@ -108,10 +108,9 @@ def main():
     '''Main function to run the program'''
     tasks = start_loop()
     start_datetime, end_datetime = avialable_time_slot()
-    calculate_amount_of_time(tasks, start_datetime, end_datetime)
+    schedule = Scheduler(tasks, start_datetime, end_datetime)
+    schedule.calculate_amount_of_time()
+
 
 if __name__ == "__main__":
     main()
-
-
-
