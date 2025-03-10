@@ -54,3 +54,12 @@ class TaskDataManager:
         tasks.append({ "name": task.name, "duration": task.duration.total_seconds() / 3600,
                        "due_date": task.due_date.strftime('%Y-%m-%d'), "priority": task.priority, "urgency": task.urgency})
         self.save_to_json(tasks)
+
+    def save_tasks(self, tasks):
+        self.save_to_csv(tasks)
+        self.save_to_json(tasks)
+
+    def load_tasks(self):
+        return self.load_from_csv(), self.load_from_json()
+    
+    
