@@ -1,0 +1,5 @@
+name,duration,due_date,priority,urgency,category
+Laundry,1.0,2025-03-10,medium,0.7,household
+Dishes,0.5,2025-03-11,low,0.3,household
+Homework,2.5,2025-03-09,high,0.9,study
+Workout,1.5,2025-03-12,high,0.8,personal
