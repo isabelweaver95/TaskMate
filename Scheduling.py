@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-import task
+from task import Task
 
 class Scheduler:
     def __init__(self, tasks, start_time, end_time):

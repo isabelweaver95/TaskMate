@@ -3,12 +3,13 @@ from datetime import datetime, timedelta
 class Task:
     PRIORITY_MAP = {"high": 3, "medium": 2, "low": 1}  # Mapping priority to numeric values
 
-    def __init__(self, name, time, due_date, priority):
+    def __init__(self, name, time, due_date, priority, category):
         self.name = self.validate_name(name)
         self.time = self.validate_duration(time)
         self.priority = self.validate_priority(priority)
         self.due_date = self.convert_to_datetime(due_date)
         self.urgency = self.calculate_urgency()
+        self.category = category
 
 
     @staticmethod

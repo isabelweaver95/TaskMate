@@ -1,5 +1,232 @@
 name,duration,due_date,priority,urgency,category
-Laundry,1.0,2025-03-10,medium,0.7,household
-Dishes,0.5,2025-03-11,low,0.3,household
-Homework,2.5,2025-03-09,high,0.9,study
-Workout,1.5,2025-03-12,high,0.8,personal
+Laundry,15,2025-03-13,medium,0.7,household
+Dishes,30,2025-03-13,low,0.3,household
+Vaccuuming,10,2025-03-14,medium,0.6,household
+Home pickup,10,2025-03-14,low,0.4,household
+Reading,180,2025-03-15,medium,0.5,hobby
+Writing,240,2025-03-16,high,0.8,hobby
+Research,240,2025-03-16,high,0.9,hobby
+Folding Laundry,10,2025-03-14,low,0.3,household
+Dishes,10,2025-03-14,low,0.3,household
+Exercise,40,2025-03-15,high,0.8,personal
+Mopping floors,15,2025-03-14,medium,0.6,household
+Homework,180,2025-03-15,high,1.0,study
+Folding Laundry,15,2025-03-14,low,0.4,household
+Laundry,180,2025-03-16,medium,0.7,household
+Dishes,20,2025-03-13,low,0.3,household
+Vaccuuming,5,2025-03-14,medium,0.6,household
+Emails,10,2025-03-13,low,0.4,work
+Meetings,60,2025-03-14,high,0.9,work
+Reading,120,2025-03-15,medium,0.5,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Research,180,2025-03-16,high,0.9,hobby
+Exercise,90,2025-03-15,high,0.8,personal
+Cooking,60,2025-03-14,medium,0.6,household
+Shopping,90,2025-03-15,medium,0.7,household
+Dishes,45,2025-03-13,low,0.3,household
+Vaccuuming,5,2025-03-14,medium,0.6,household
+Homework,90,2025-03-15,high,1.0,study
+Reading Emails,15,2025-03-13,low,0.4,work
+Laundry,15,2025-03-13,medium,0.7,household
+Dishes,15,2025-03-13,low,0.3,household
+Homework,180,2025-03-15,high,1.0,study
+Homework,150,2025-03-15,high,1.0,study
+Vaccuuming,5,2025-03-14,medium,0.6,household
+Exercise,26,2025-03-15,high,0.8,personal
+Cooking,45,2025-03-14,medium,0.6,household
+Reading,60,2025-03-15,medium,0.5,hobby
+Shower,15,2025-03-13,low,0.4,personal
+Crafting,90,2025-03-15,medium,0.6,hobby
+Laundry,60,2025-03-16,medium,0.7,household
+Meetings,30,2025-03-14,high,0.9,work
+Meetings,30,2025-03-14,high,0.9,work
+Meetings,30,2025-03-14,high,0.9,work
+Meetings,30,2025-03-14,high,0.9,work
+Reports,30,2025-03-14,high,0.8,work
+Reading,60,2025-03-15,medium,0.5,hobby
+Reading,90,2025-03-15,medium,0.5,hobby
+Reading,90,2025-03-15,medium,0.5,hobby
+Reading,60,2025-03-15,medium,0.5,hobby
+Reading,60,2025-03-15,medium,0.5,hobby
+Reading,90,2025-03-15,medium,0.5,hobby
+Reading,90,2025-03-15,medium,0.5,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Research,30,2025-03-16,high,0.9,hobby
+Research,30,2025-03-16,high,0.9,hobby
+Research,30,2025-03-16,high,0.9,hobby
+Research,30,2025-03-16,high,0.9,hobby
+Exercise,45,2025-03-15,high,0.8,personal
+Exercise,45,2025-03-15,high,0.8,personal
+Exercise,30,2025-03-15,high,0.8,personal
+Exercise,45,2025-03-15,high,0.8,personal
+Exercise,45,2025-03-15,high,0.8,personal
+Cooking,60,2025-03-14,medium,0.6,household
+Cooking,45,2025-03-14,medium,0.6,household
+Cooking,45,2025-03-14,medium,0.6,household
+Cooking,45,2025-03-14,medium,0.6,household
+Cooking,45,2025-03-14,medium,0.6,household
+Shopping,45,2025-03-15,medium,0.7,household
+Dishes,30,2025-03-13,low,0.3,household
+Dishes,25,2025-03-13,low,0.3,household
+Dishes,25,2025-03-13,low,0.3,household
+Dishes,5,2025-03-13,low,0.3,household
+Laundry,15,2025-03-13,medium,0.7,household
+Laundry,30,2025-03-13,medium,0.7,household
+Laundry,30,2025-03-13,medium,0.7,household
+Laundry,40,2025-03-13,medium,0.7,household
+Dishes,10,2025-03-13,low,0.3,household
+Dishes,10,2025-03-13,low,0.3,household
+Homework,45,2025-03-15,high,1.0,study
+Homework,60,2025-03-15,high,1.0,study
+Homework,60,2025-03-15,high,1.0,study
+Homework,60,2025-03-15,high,1.0,study
+Cook,60,2025-03-14,medium,0.6,household
+Cook,30,2025-03-14,medium,0.6,household
+Homework,120,2025-03-15,high,1.0,study
+Cooking,30,2025-03-14,medium,0.6,household
+Cooking,20,2025-03-14,medium,0.6,household
+Homework,120,2025-03-15,high,1.0,study
+Homework,120,2025-03-15,high,1.0,study
+Homework,60,2025-03-15,high,1.0,study
+Vaccuum,15,2025-03-14,medium,0.6,household
+Vaccuum,30,2025-03-14,medium,0.6,household
+Vaccuum,5,2025-03-14,medium,0.6,household
+Vacuum,5,2025-03-14,medium,0.6,household
+Vaccuuming,5,2025-03-14,medium,0.6,household
+Vaccuuming,5,2025-03-14,medium,0.6,household
+Sweep,15,2025-03-14,medium,0.6,household
+Sweep,15,2025-03-14,medium,0.6,household
+Sweeping,5,2025-03-14,medium,0.6,household
+Sweeping,5,2025-03-14,medium,0.6,household
+Iron Shirts,30,2025-03-13,low,0.4,personal
+Shower,15,2025-03-13,low,0.4,personal
+Cook,90,2025-03-14,medium,0.6,household
+Cooking,20,2025-03-14,medium,0.6,household
+Read,180,2025-03-15,medium,0.5,hobby
+Read,20,2025-03-13,low,0.4,hobby
+Clean Bathroom,15,2025-03-14,medium,0.6,household
+Clean the Bathroom,15,2025-03-14,medium,0.6,household
+Clean Bathroom,15,2025-03-14,medium,0.6,household
+Dust,20,2025-03-14,medium,0.6,household
+Dust,20,2025-03-14,medium,0.6,household
+Mop,20,2025-03-14,medium,0.6,household
+Workout,45,2023-10-15,medium,0.7,health
+Workout,60,2023-10-16,high,0.8,health
+Walk,30,2023-10-14,low,0.4,health
+Walk,45,2023-10-15,medium,0.6,health
+Walk,7,2023-10-13,low,0.3,health
+Homework,60,2023-10-17,high,0.9,education
+Basketball,180,2023-10-18,medium,0.5,recreation
+Dishes,10,2023-10-14,low,0.3,household
+Laundry,2,2023-10-13,low,0.2,household
+Vaccuuming,30,2023-10-15,medium,0.6,household
+Vaccuuming,15,2023-10-14,low,0.4,household
+Sweep,5,2023-10-13,low,0.2,household
+Clean the Bathroom,10,2023-10-14,low,0.3,household
+Quilt,240,2023-10-19,medium,0.5,hobby
+Cook,15,2023-10-14,low,0.4,household
+Cook,30,2023-10-15,medium,0.6,household
+Cook,120,2023-10-17,high,0.8,household
+Yoga,45,2023-10-16,medium,0.7,health
+Water Plants,30,2023-10-15,low,0.3,household
+Weed Plants,120,2023-10-18,medium,0.5,household
+Study,45,2023-10-16,medium,0.7,education
+Study,60,2023-10-17,high,0.9,education
+Dishes,10,2023-10-14,low,0.3,household
+Dishes,10,2023-10-14,low,0.3,household
+Dishes,10,2023-10-14,low,0.3,household
+Clean the Bathroom,10,2023-10-14,low,0.3,household
+Clean the Bathroom,10,2023-10-14,low,0.3,household
+Quilt,240,2023-10-19,medium,0.5,hobby
+Quilt,240,2023-10-19,medium,0.5,hobby
+Quilt,240,2023-10-19,medium,0.5,hobby
+Cook,15,2023-10-14,low,0.4,household
+Cook,30,2023-10-15,medium,0.6,household
+Cook,15,2023-10-14,low,0.4,household
+Cook,30,2023-10-15,medium,0.6,household
+Cook,15,2023-10-14,low,0.4,household
+Cook,30,2023-10-15,medium,0.6,household
+Cook,15,2023-10-14,low,0.4,household
+Cook,30,2023-10-15,medium,0.6,household
+Cook,15,2023-10-14,low,0.4,household
+Cook,30,2023-10-15,medium,0.6,household
+Cook,15,2023-10-14,low,0.4,household
+Cook,30,2023-10-15,medium,0.6,household
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,15,2023-10-14,low,0.2,personal
+Break,10,2023-10-14,low,0.2,personal
+Clean Closet,45,2023-10-16,medium,0.5,household
+Clean Closet,40,2023-10-16,medium,0.5,household
+Clean Closet,60,2023-10-17,high,0.7,household
+Clean Closet,40,2023-10-16,medium,0.5,household
+Clean Closet,45,2023-10-16,medium,0.5,household
+Clean Closet,35,2023-10-16,medium,0.5,household
+Clean Closet,30,2023-10-16,medium,0.5,household
+Break,10,2023-10-14,low,0.2,personal
+Break,10,2023-10-14,low,0.2,personal
+Break,10,2023-10-14,low,0.2,personal
+Break,10,2023-10-14,low,0.2,personal
+Break,10,2023-10-14,low,0.2,personal
+Break,10,2023-10-14,low,0.2,personal
+Break,10,2023-10-14,low,0.2,personal
+Break,10,2023-10-14,low,0.2,personal
+Mop,15,2023-10-15,medium,0.6,household
+Mop,20,2023-10-15,medium,0.6,household
+Mop,15,2023-10-15,medium,0.6,household
+Mop,10,2023-10-14,low,0.3,household
+Mop,10,2023-10-14,low,0.3,household
+Mop,25,2023-10-15,medium,0.6,household
+Mop,10,2023-10-14,low,0.3,household
+Mop,15,2023-10-15,medium,0.6,household
+Mop,10,2023-10-14,low,0.3,household
+Mop,10,2023-10-14,low,0.3,household
+Clean Bathroom,15,2023-10-15,medium,0.6,household
+Clean Bathroom,30,2023-10-16,high,0.8,household
+Clean Bathroom,30,2023-10-16,high,0.8,household
+Clean Bathroom,20,2023-10-15,medium,0.6,household
+Clean Bathroom,30,2023-10-16,high,0.8,household
+Clean Bathroom,15,2023-10-15,medium,0.6,household
+Clean Bathroom,25,2023-10-15,medium,0.6,household
+Workout,30,2023-10-16,medium,0.7,health
+Workout,20,2023-10-15,medium,0.6,health
+Workout, 75, 2024-03-22, medium, 0.5, health
+Meal Prep,90,2023-10-15,high,0.8,household
+Meal Prep,100,2023-10-16,high,0.9,household
+Meal Prep,60,2023-10-14,medium,0.7,household
+Meal Prep,60,2023-10-15,medium,0.7,household
+Meal Prep,60,2023-10-16,medium,0.7,household
+Meal Prep,120,2023-10-17,high,0.9,household
+Meal Prep,120,2023-10-18,high,0.9,household
+Walk the dog,20,2023-10-14,medium,0.6,personal
+Walk the dog,7,2023-10-13,low,0.3,personal
+Walk the dog,15,2023-10-14,medium,0.5,personal
+Walk the dog,15,2023-10-15,medium,0.5,personal
+Walk the dog,10,2023-10-13,low,0.4,personal
+Walk the dog,15,2023-10-14,medium,0.5,personal
+Study for exam,120,2023-10-17,high,0.9,education
+Study for exam,120,2023-10-18,high,0.9,education
+Study for exam,120,2023-10-19,high,0.9,education
+Study for exam,120,2023-10-20,high,0.9,education
+Study for exam,120,2023-10-21,high,0.9,education
+Study for exam,120,2023-10-22,high,0.9,education

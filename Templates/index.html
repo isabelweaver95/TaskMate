@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Duration Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+        .prediction {
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Duration Predictor</h1>
+        <form method="POST">
+            <label for="task_name">Task Name:</label>
+            <input type="text" id="task_name" name="task_name" required>
+
+            <label for="due_date">Due Date (YYYY-MM-DD):</label>
+            <input type="date" id="due_date" name="due_date" required>
+
+            <label for="priority">Priority (low/medium/high):</label>
+            <input type="text" id="priority" name="priority" required>
+
+            <label for="category">Category (household/health/education/personal/hobby):</label>
+            <input type="text" id="category" name="category" required>
+
+            <button type="submit">Predict Duration</button>
+        </form>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        {% if prediction %}
+            <div class="prediction">{{ prediction }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
