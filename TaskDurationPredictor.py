@@ -7,101 +7,91 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 
-class TaskDurationPredictor:
+class TaskDurationPredictor:    
     def __init__(self, model_filename="task_model.pkl"):
         self.model_filename = model_filename
         self.model = RandomForestRegressor()
+        self.category_mapping = {
+            'hobby': 0,
+            'household': 1,
+            'health': 2,
+            'education': 3,
+            'personal': 4
+        }
 
     def load_data(self, csv_filename="tasks.csv"):
-        """Load and preprocess the dataset."""
-        df = pd.read_csv(csv_filename)
-        
-        # Map priority to numeric values
-        df["priority"] = df["priority"].map({"low": 1, "medium": 2, "high": 3})
-        
-        # Convert category to numeric codes
-        df["category"] = df["category"].astype("category").cat.codes
-        
-        return df
+        """Load data without preprocessing (we'll handle that in train())"""
+        return pd.read_csv(csv_filename)
 
     def train(self, csv_filename="tasks.csv", extra_param=None):
-        """Train the model on existing data."""
+        """Train the model with proper feature encoding"""
         df = self.load_data(csv_filename)
         
-        # Features (X) and target (y)
-        X = df[["priority", "category", "urgency"]]  # Features
-        y = df["duration"]  # Target variable (duration)
+        # 1. Clean and standardize data
+        df['priority'] = df['priority'].astype(str).str.lower()
+        df['category'] = df['category'].astype(str).str.lower()
         
-        # Split into training and testing sets
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        # 2. Encode priority
+        df['priority'] = df['priority'].map(self.priority_map)
         
-        # Train model
+        # 3. Encode categories and store the encoder
+        categories = df['category'].unique()
+        self.category_encoder = {cat: idx for idx, cat in enumerate(categories)}
+        df['category'] = df['category'].map(self.category_encoder)
+        
+        # 4. Prepare features and target
+        X = df[["priority", "category", "urgency"]]
+        y = df["duration"]
+        
+        # 5. Train-test split
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=0.2, random_state=42
+        )
+        
+        # 6. Train model
         self.model.fit(X_train, y_train)
         
-        # Evaluate model
+        # 7. Evaluate
         predictions = self.model.predict(X_test)
-        print("Model Trained - MAE:", mean_absolute_error(y_test, predictions))
-
-        # Save the trained model
-        joblib.dump(self.model, self.model_filename)
+        mae = mean_absolute_error(y_test, predictions)
+        print(f"Model Trained - MAE: {mae:.2f}")
+        
+        # 8. Save model and encoder
+        joblib.dump({
+            'model': self.model,
+            'category_encoder': self.category_encoder,
+            'priority_map': self.priority_map
+        }, self.model_filename)
 
     def predict_duration(self, task):
-        """Predict the duration of a new task."""
-        if not self.model:
-            self.model = joblib.load(self.model_filename)  # Load the model if not already loaded
-        
-        # Create a mapping for categories (same as during training)
-        category_mapping = {"hobby": 0, "household": 1}  # Update this based on your data
-        
-        # Map task attributes to model features
-        task_data = [[
-            Task.PRIORITY_MAP[task.priority],  # Convert priority to numeric value
-            category_mapping.get(task.category, -1),  # Convert category to numeric code
-            task.urgency  # Use calculated urgency
-        ]]
-        
-        # Predict duration
-        return self.model.predict(task_data)[0]
-
-
-
-# # Train the model
-# predictor = TaskDurationPredictor()
-# predictor.train("tasks.csv")
-
-# # Compare predictions with actual values
-# df = predictor.load_data("tasks.csv")
-# X = df[["priority", "category", "urgency"]]
-# y = df["duration"]
-# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# predictions = predictor.model.predict(X_test)
-# for i in range(len(X_test)):
-#     print(f"Actual: {y_test.iloc[i]}, Predicted: {predictions[i]}")
-
-# Plot actual vs. predicted durations
-# plt.scatter(y_test, predictions)
-# plt.xlabel("Actual Duration")
-# plt.ylabel("Predicted Duration")
-# plt.title("Actual vs. Predicted Durations")
-# plt.show()
-
-# # Plot feature importance
-# importances = predictor.model.feature_importances_
-# feature_names = ["priority", "category", "urgency"]
-# plt.bar(feature_names, importances)
-# plt.xlabel("Features")
-# plt.ylabel("Importance")
-# plt.title("Feature Importance")
-# plt.show()
-
-# Test with a new task
-# new_task = Task(
-#     name="Laundry",
-#     time=5,  # Duration in hours (not used in prediction)
-#     due_date="2025-03-17",  # Due date in YYYY-MM-DD format
-#     priority="high",
-#     category="hobby"  # Example category
-# )
-# predicted_duration = predictor.predict_duration(new_task)
-# print("Predicted Duration:", predicted_duration)
+        """Predict duration for task data (as dictionary)"""
+        try:
+            if not hasattr(self.model, 'estimators_'):
+                self.model = joblib.load(self.model_filename)
+            
+            # Prepare features using Task's PRIORITY_MAP
+            features = [
+                Task.PRIORITY_MAP.get(task['priority'], 1),  # priority
+                self.category_mapping.get(task['category'], -1),  # category
+                float(task.get('urgency', 0))  # urgency
+            ]
+            
+            return self.model.predict([features])[0]
+            
+        except Exception as e:
+            raise ValueError(f"Prediction failed: {str(e)}")
+    
+    # Add this method to automatically update your model
+    def update_model(self, new_data_file):
+        """Incremental model update"""
+        try:
+            new_data = self.load_data(new_data_file)
+            self.validate_data(new_data)
+            
+            # Retrain with combined data
+            combined = pd.concat([self.load_data(), new_data])
+            self.train(combined)
+            
+            print("Model updated successfully")
+        except Exception as e:
+            print(f"Update failed: {str(e)}")

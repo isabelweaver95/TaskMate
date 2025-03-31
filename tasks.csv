@@ -230,3 +230,15 @@ Study for exam,120,2023-10-19,high,0.9,education
 Study for exam,120,2023-10-20,high,0.9,education
 Study for exam,120,2023-10-21,high,0.9,education
 Study for exam,120,2023-10-22,high,0.9,education
+Laundry,30,2023-11-15,Medium,High,household
+Homework,120,2023-11-10,High,High,education
+Dishes,15,2023-11-12,Low,Medium,household
+Cook Dinner,45,2023-11-11,Medium,High,Food
+Exercise,60,2023-11-13,Medium,Medium,Health
+Grocery Shopping,90,2023-11-16,Medium,Medium,Household
+Read,45,2023-11-20,Low,Low,Personal
+Call Mom,30,2023-11-18,Medium,Low,personal
+Study,180,2023-11-09,High,High,education
+Clean Room,60,2023-11-17,Low,Medium,Household
+
+

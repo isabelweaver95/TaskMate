@@ -53,11 +53,23 @@
             <label for="due_date">Due Date (YYYY-MM-DD):</label>
             <input type="date" id="due_date" name="due_date" required>
 
-            <label for="priority">Priority (low/medium/high):</label>
-            <input type="text" id="priority" name="priority" required>
+            <label for="priority">Priority:</label>
+            <select id="priority" name="priority" required>
+                <option value="" disabled selected>Select priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
 
-            <label for="category">Category (household/health/education/personal/hobby):</label>
-            <input type="text" id="category" name="category" required>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="household">Household</option>
+                <option value="health">Health</option>
+                <option value="education">Education</option>
+                <option value="personal">Personal</option>
+                <option value="hobby">Hobby</option>
+            </select>
 
             <button type="submit">Predict Duration</button>
         </form>
