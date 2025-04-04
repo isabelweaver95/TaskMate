@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -82,5 +82,229 @@
             <div class="prediction">{{ prediction }}</div>
         {% endif %}
     </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Duration Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+        .prediction {
+            color: green;
+            margin-top: 10px;
+        }
+        .task-list {
+            margin-top: 20px;
+        }
+        .task-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .form-step {
+            display: none;
+        }
+        .form-step.active {
+            display: block;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Duration Predictor</h1>
+        
+        <!-- Step 1: Basic Info -->
+        <div id="step1" class="form-step active">
+            <h2>Step 1: Timeframe</h2>
+            <label for="total_tasks">Number of Tasks:</label>
+            <input type="number" id="total_tasks" name="total_tasks" min="1" max="20" required>
+            
+            <label for="time_period">Time Period Available (in hours):</label>
+            <input type="number" id="time_period" name="time_period" min="1" required>
+            
+            <div class="navigation-buttons">
+                <button type="button" onclick="nextStep(1)">Next</button>
+            </div>
+        </div>
+        
+        <!-- Step 2: Task Entry -->
+        <div id="step2" class="form-step">
+            <h2>Step 2: Enter Your Tasks</h2>
+            <div id="task-forms">
+                <!-- Task forms will be generated here by JavaScript -->
+            </div>
+            
+            <div class="navigation-buttons">
+                <button type="button" onclick="prevStep(2)">Previous</button>
+                <button type="button" onclick="submitAllTasks()">Submit All Tasks</button>
+            </div>
+        </div>
+        
+        <!-- Step 3: Results -->
+        <div id="step3" class="form-step">
+            <h2>Step 3: Task Predictions</h2>
+            <div id="predictions-container">
+                {% if predictions %}
+                    {% for task in predictions %}
+                        <div class="task-item">
+                            <h3>{{ task.name }}</h3>
+                            <p>Priority: {{ task.priority|capitalize }}</p>
+                            <p>Category: {{ task.category|capitalize }}</p>
+                            <p>Due: {{ task.due_date }}</p>
+                            <p class="prediction">Predicted Duration: {{ task.prediction }}</p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            
+            <div class="navigation-buttons">
+                <button type="button" onclick="prevStep(3)">Previous</button>
+                <button type="button" onclick="resetForm()">Start Over</button>
+            </div>
+        </div>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+    </div>
+
+    <script>
+        let currentStep = 1;
+        let totalTasks = 0;
+        
+        function nextStep(step) {
+            if (step === 1) {
+                totalTasks = parseInt(document.getElementById('total_tasks').value);
+                if (totalTasks < 1) {
+                    alert('Please enter a valid number of tasks');
+                    return;
+                }
+                
+                // Generate task forms
+                const taskForms = document.getElementById('task-forms');
+                taskForms.innerHTML = '';
+                
+                for (let i = 0; i < totalTasks; i++) {
+                    taskForms.innerHTML += `
+                        <div class="task-form">
+                            <h3>Task ${i + 1}</h3>
+                            <label for="task_name_${i}">Task Name:</label>
+                            <input type="text" id="task_name_${i}" name="task_name_${i}" required>
+                            
+                            <label for="due_date_${i}">Due Date (YYYY-MM-DD):</label>
+                            <input type="date" id="due_date_${i}" name="due_date_${i}" required>
+                            
+                            <label for="priority_${i}">Priority:</label>
+                            <select id="priority_${i}" name="priority_${i}" required>
+                                <option value="" disabled selected>Select priority</option>
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                            
+                            <label for="category_${i}">Category:</label>
+                            <select id="category_${i}" name="category_${i}" required>
+                                <option value="" disabled selected>Select a category</option>
+                                <option value="household">Household</option>
+                                <option value="health">Health</option>
+                                <option value="education">Education</option>
+                                <option value="personal">Personal</option>
+                                <option value="hobby">Hobby</option>
+                            </select>
+                            <hr>
+                        </div>
+                    `;
+                }
+            }
+            
+            document.getElementById(`step${currentStep}`).classList.remove('active');
+            currentStep++;
+            document.getElementById(`step${currentStep}`).classList.add('active');
+        }
+        
+        function prevStep(step) {
+            document.getElementById(`step${currentStep}`).classList.remove('active');
+            currentStep--;
+            document.getElementById(`step${currentStep}`).classList.add('active');
+        }
+        
+        function resetForm() {
+            document.getElementById(`step${currentStep}`).classList.remove('active');
+            currentStep = 1;
+            document.getElementById(`step${currentStep}`).classList.add('active');
+            document.querySelector('form').reset();
+        }
+        
+        function submitAllTasks() {
+            const formData = new FormData();
+            
+            // Add basic info
+            formData.append('total_tasks', totalTasks);
+            formData.append('time_period', document.getElementById('time_period').value);
+            
+            // Add all task data
+            for (let i = 0; i < totalTasks; i++) {
+                formData.append(`task_name_${i}`, document.getElementById(`task_name_${i}`).value);
+                formData.append(`due_date_${i}`, document.getElementById(`due_date_${i}`).value);
+                formData.append(`priority_${i}`, document.getElementById(`priority_${i}`).value);
+                formData.append(`category_${i}`, document.getElementById(`category_${i}`).value);
+            }
+            
+            // Send to server
+            fetch('/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(html => {
+                document.body.innerHTML = html;
+                nextStep(2); // Go to results
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
 </body>
 </html>

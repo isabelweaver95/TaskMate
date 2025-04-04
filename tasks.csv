@@ -10,13 +10,13 @@ Folding Laundry,10,2025-03-14,low,0.3,household
 Dishes,10,2025-03-14,low,0.3,household
 Exercise,40,2025-03-15,high,0.8,personal
 Mopping floors,15,2025-03-14,medium,0.6,household
-Homework,180,2025-03-15,high,1.0,study
+Homework,180,2025-03-15,high,1.0,education
 Folding Laundry,15,2025-03-14,low,0.4,household
 Laundry,180,2025-03-16,medium,0.7,household
 Dishes,20,2025-03-13,low,0.3,household
 Vaccuuming,5,2025-03-14,medium,0.6,household
-Emails,10,2025-03-13,low,0.4,work
-Meetings,60,2025-03-14,high,0.9,work
+Emails,10,2025-03-13,low,0.4,personal
+Meetings,60,2025-03-14,high,0.9,personal
 Reading,120,2025-03-15,medium,0.5,hobby
 Writing,120,2025-03-16,high,0.8,hobby
 Research,180,2025-03-16,high,0.9,hobby
@@ -25,12 +25,12 @@ Cooking,60,2025-03-14,medium,0.6,household
 Shopping,90,2025-03-15,medium,0.7,household
 Dishes,45,2025-03-13,low,0.3,household
 Vaccuuming,5,2025-03-14,medium,0.6,household
-Homework,90,2025-03-15,high,1.0,study
-Reading Emails,15,2025-03-13,low,0.4,work
+Homework,90,2025-03-15,high,1.0,education
+Reading Emails,15,2025-03-13,low,0.4,personal
 Laundry,15,2025-03-13,medium,0.7,household
 Dishes,15,2025-03-13,low,0.3,household
-Homework,180,2025-03-15,high,1.0,study
-Homework,150,2025-03-15,high,1.0,study
+Homework,180,2025-03-15,high,1.0,education
+Homework,150,2025-03-15,high,1.0,education
 Vaccuuming,5,2025-03-14,medium,0.6,household
 Exercise,26,2025-03-15,high,0.8,personal
 Cooking,45,2025-03-14,medium,0.6,household
@@ -38,11 +38,11 @@ Reading,60,2025-03-15,medium,0.5,hobby
 Shower,15,2025-03-13,low,0.4,personal
 Crafting,90,2025-03-15,medium,0.6,hobby
 Laundry,60,2025-03-16,medium,0.7,household
-Meetings,30,2025-03-14,high,0.9,work
-Meetings,30,2025-03-14,high,0.9,work
-Meetings,30,2025-03-14,high,0.9,work
-Meetings,30,2025-03-14,high,0.9,work
-Reports,30,2025-03-14,high,0.8,work
+Meetings,30,2025-03-14,high,0.9,personal
+Meetings,30,2025-03-14,high,0.9,personal
+Meetings,30,2025-03-14,high,0.9,personal
+Meetings,30,2025-03-14,high,0.9,personal
+Reports,30,2025-03-14,high,0.8,personal
 Reading,60,2025-03-15,medium,0.5,hobby
 Reading,90,2025-03-15,medium,0.5,hobby
 Reading,90,2025-03-15,medium,0.5,hobby
@@ -84,18 +84,18 @@ Laundry,30,2025-03-13,medium,0.7,household
 Laundry,40,2025-03-13,medium,0.7,household
 Dishes,10,2025-03-13,low,0.3,household
 Dishes,10,2025-03-13,low,0.3,household
-Homework,45,2025-03-15,high,1.0,study
-Homework,60,2025-03-15,high,1.0,study
-Homework,60,2025-03-15,high,1.0,study
-Homework,60,2025-03-15,high,1.0,study
+Homework,45,2025-03-15,high,1.0,education
+Homework,60,2025-03-15,high,1.0,education
+Homework,60,2025-03-15,high,1.0,education
+Homework,60,2025-03-15,high,1.0,education
 Cook,60,2025-03-14,medium,0.6,household
 Cook,30,2025-03-14,medium,0.6,household
-Homework,120,2025-03-15,high,1.0,study
+Homework,120,2025-03-15,high,1.0,education
 Cooking,30,2025-03-14,medium,0.6,household
 Cooking,20,2025-03-14,medium,0.6,household
-Homework,120,2025-03-15,high,1.0,study
-Homework,120,2025-03-15,high,1.0,study
-Homework,60,2025-03-15,high,1.0,study
+Homework,120,2025-03-15,high,1.0,education
+Homework,120,2025-03-15,high,1.0,education
+Homework,60,2025-03-15,high,1.0,education
 Vaccuum,15,2025-03-14,medium,0.6,household
 Vaccuum,30,2025-03-14,medium,0.6,household
 Vaccuum,5,2025-03-14,medium,0.6,household
@@ -124,7 +124,7 @@ Walk,30,2023-10-14,low,0.4,health
 Walk,45,2023-10-15,medium,0.6,health
 Walk,7,2023-10-13,low,0.3,health
 Homework,60,2023-10-17,high,0.9,education
-Basketball,180,2023-10-18,medium,0.5,recreation
+Basketball,180,2023-10-18,medium,0.5,hobby
 Dishes,10,2023-10-14,low,0.3,household
 Laundry,2,2023-10-13,low,0.2,household
 Vaccuuming,30,2023-10-15,medium,0.6,household
@@ -210,7 +210,7 @@ Clean Bathroom,15,2023-10-15,medium,0.6,household
 Clean Bathroom,25,2023-10-15,medium,0.6,household
 Workout,30,2023-10-16,medium,0.7,health
 Workout,20,2023-10-15,medium,0.6,health
-Workout, 75, 2024-03-22, medium, 0.5, health
+Workout,75, 2024-03-22, medium, 0.5,health
 Meal Prep,90,2023-10-15,high,0.8,household
 Meal Prep,100,2023-10-16,high,0.9,household
 Meal Prep,60,2023-10-14,medium,0.7,household
@@ -233,12 +233,1836 @@ Study for exam,120,2023-10-22,high,0.9,education
 Laundry,30,2023-11-15,Medium,High,household
 Homework,120,2023-11-10,High,High,education
 Dishes,15,2023-11-12,Low,Medium,household
-Cook Dinner,45,2023-11-11,Medium,High,Food
-Exercise,60,2023-11-13,Medium,Medium,Health
-Grocery Shopping,90,2023-11-16,Medium,Medium,Household
-Read,45,2023-11-20,Low,Low,Personal
+Cook Dinner,45,2023-11-11,Medium,High,household
+Exercise,60,2023-11-13,Medium,Medium,health
+Grocery Shopping,90,2023-11-16,Medium,Medium,household
+Read,45,2023-11-20,Low,Low,personal
 Call Mom,30,2023-11-18,Medium,Low,personal
 Study,180,2023-11-09,High,High,education
-Clean Room,60,2023-11-17,Low,Medium,Household
-
-
+Clean Room,60,2023-11-17,Low,Medium,household
+Vaccuuming,10,2025-03-14,medium,0.6,household
+Home pickup,10,2025-03-14,low,0.4,household
+Reading,180,2025-03-15,medium,0.5,hobby
+Writing,240,2025-03-16,high,0.8,hobby
+Research,240,2025-03-16,high,0.9,hobby
+Folding Laundry,10,2025-03-14,low,0.3,household
+Exercise,40,2025-03-15,high,0.8,personal
+Mopping floors,15,2025-03-14,medium,0.6,household
+Folding Laundry,15,2025-03-14,low,0.4,household
+Laundry,180,2025-03-16,medium,0.7,household
+Dishes,20,2025-03-13,low,0.3,household
+Emails,10,2025-03-13,low,0.4,personal
+Meetings,60,2025-03-14,high,0.9,personal
+Reading,120,2025-03-15,medium,0.5,hobby
+Research,180,2025-03-16,high,0.9,hobby
+Exercise,90,2025-03-15,high,0.8,personal
+Shopping,90,2025-03-15,medium,0.7,household
+Dishes,45,2025-03-13,low,0.3,household
+Homework,90,2025-03-15,high,1.0,education
+Reading Emails,15,2025-03-13,low,0.4,personal
+Homework,180,2025-03-15,high,1.0,education
+Homework,150,2025-03-15,high,1.0,education
+Exercise,26,2025-03-15,high,0.8,personal
+Crafting,90,2025-03-15,medium,0.6,hobby
+Laundry,60,2025-03-16,medium,0.7,household
+Meetings,30,2025-03-14,high,0.9,personal
+Reports,30,2025-03-14,high,0.8,personal
+Reading,60,2025-03-15,medium,0.5,hobby
+Reading,90,2025-03-15,medium,0.5,hobby
+Writing,120,2025-03-16,high,0.8,hobby
+Research,30,2025-03-16,high,0.9,hobby
+Exercise,30,2025-03-15,high,0.8,personal
+Exercise,45,2025-03-15,high,0.8,personal
+Cooking,60,2025-03-14,medium,0.6,household
+Cooking,45,2025-03-14,medium,0.6,household
+Shopping,45,2025-03-15,medium,0.7,household
+Dishes,30,2025-03-13,low,0.3,household
+Dishes,25,2025-03-13,low,0.3,household
+Dishes,5,2025-03-13,low,0.3,household
+Laundry,15,2025-03-13,medium,0.7,household
+Laundry,40,2025-03-13,medium,0.7,household
+Homework,45,2025-03-15,high,1.0,education
+Cook,60,2025-03-14,medium,0.6,household
+Cooking,30,2025-03-14,medium,0.6,household
+Vaccuum,15,2025-03-14,medium,0.6,household
+Vaccuum,30,2025-03-14,medium,0.6,household
+Vaccuum,5,2025-03-14,medium,0.6,household
+Vacuum,5,2025-03-14,medium,0.6,household
+Vaccuuming,5,2025-03-14,medium,0.6,household
+Sweep,15,2025-03-14,medium,0.6,household
+Sweeping,5,2025-03-14,medium,0.6,household
+Iron Shirts,30,2025-03-13,low,0.4,personal
+Shower,15,2025-03-13,low,0.4,personal
+Cook,90,2025-03-14,medium,0.6,household
+Cooking,20,2025-03-14,medium,0.6,household
+Read,180,2025-03-15,medium,0.5,hobby
+Read,20,2025-03-13,low,0.4,hobby
+Clean the Bathroom,15,2025-03-14,medium,0.6,household
+Dust,20,2025-03-14,medium,0.6,household
+Workout,45,2023-10-15,medium,0.7,health
+Workout,60,2023-10-16,high,0.8,health
+Walk,30,2023-10-14,low,0.4,health
+Walk,45,2023-10-15,medium,0.6,health
+Walk,7,2023-10-13,low,0.3,health
+Homework,60,2023-10-17,high,0.9,education
+Basketball,180,2023-10-18,medium,0.5,hobby
+Laundry,2,2023-10-13,low,0.2,household
+Vaccuuming,30,2023-10-15,medium,0.6,household
+Vaccuuming,15,2023-10-14,low,0.4,household
+Sweep,5,2023-10-13,low,0.2,household
+Cook,120,2023-10-17,high,0.8,household
+Yoga,45,2023-10-16,medium,0.7,health
+Water Plants,30,2023-10-15,low,0.3,household
+Weed Plants,120,2023-10-18,medium,0.5,household
+Study,45,2023-10-16,medium,0.7,education
+Study,60,2023-10-17,high,0.9,education
+Dishes,10,2023-10-14,low,0.3,household
+Clean the Bathroom,10,2023-10-14,low,0.3,household
+Quilt,240,2023-10-19,medium,0.5,hobby
+Cook,15,2023-10-14,low,0.4,household
+Cook,30,2023-10-15,medium,0.6,household
+Break,15,2023-10-14,low,0.2,personal
+Clean Closet,60,2023-10-17,high,0.7,household
+Clean Closet,40,2023-10-16,medium,0.5,household
+Clean Closet,45,2023-10-16,medium,0.5,household
+Clean Closet,35,2023-10-16,medium,0.5,household
+Clean Closet,30,2023-10-16,medium,0.5,household
+Break,10,2023-10-14,low,0.2,personal
+Mop,20,2023-10-15,medium,0.6,household
+Mop,25,2023-10-15,medium,0.6,household
+Mop,15,2023-10-15,medium,0.6,household
+Mop,10,2023-10-14,low,0.3,household
+Clean Bathroom,20,2023-10-15,medium,0.6,household
+Clean Bathroom,30,2023-10-16,high,0.8,household
+Clean Bathroom,15,2023-10-15,medium,0.6,household
+Clean Bathroom,25,2023-10-15,medium,0.6,household
+Workout,30,2023-10-16,medium,0.7,health
+Workout,20,2023-10-15,medium,0.6,health
+Workout,75, 2024-03-22, medium, 0.5,health
+Meal Prep,90,2023-10-15,high,0.8,household
+Meal Prep,100,2023-10-16,high,0.9,household
+Meal Prep,60,2023-10-16,medium,0.7,household
+Meal Prep,120,2023-10-18,high,0.9,household
+Walk the dog,20,2023-10-14,medium,0.6,personal
+Walk the dog,7,2023-10-13,low,0.3,personal
+Walk the dog,10,2023-10-13,low,0.4,personal
+Walk the dog,15,2023-10-14,medium,0.5,personal
+Study for exam,120,2023-10-22,high,0.9,education
+Laundry,30,2023-11-15,Medium,High,household
+Homework,120,2023-11-10,High,High,education
+Dishes,15,2023-11-12,Low,Medium,household
+Cook Dinner,45,2023-11-11,Medium,High,household
+Exercise,60,2023-11-13,Medium,Medium,health
+Grocery Shopping,90,2023-11-16,Medium,Medium,household
+Read,45,2023-11-20,Low,Low,personal
+Call Mom,30,2023-11-18,Medium,Low,personal
+Study,180,2023-11-09,High,High,education
+Clean Room,60,2023-11-17,Low,Medium,household
+Gardening weekend,151,2025-04-18,medium,0.4,hobby
+Hydration tracking day,9,2025-04-19,low,0.3,health
+Group study session,118,2025-04-08,high,0.8,education
+Science project research,119,2025-04-10,low,0.7,education
+Mindfulness meditation,12,2025-04-08,medium,0.3,health
+Math problem set,86,2025-04-16,medium,0.7,education
+Meal prep: healthy lunches,111,2025-04-21,high,1.0,health
+Personal goal review,39,2025-04-12,medium,0.6,personal
+Seasonal closet swap,116,2025-04-13,low,0.5,household
+Language practice,46,2025-04-15,low,0.5,education
+Meal prep: healthy lunches,107,2025-04-04,low,0.6,health
+Watercolor painting,81,2025-04-01,low,0.2,hobby
+Creative writing,57,2025-04-21,high,0.4,hobby
+Creative writing,69,2025-04-21,medium,0.4,hobby
+Laundry (3 loads),112,2025-04-11,low,0.5,household
+Gardening weekend,131,2025-04-08,low,0.4,hobby
+Memory organizing (photos/files),94,2025-04-12,medium,0.3,personal
+Annual checkup,70,2025-04-21,low,0.7,health
+Physical therapy exercises,30,2025-04-11,low,0.5,health
+Sleep hygiene routine,16,2025-04-19,high,0.7,health
+Chess tournament prep,93,2025-04-15,medium,0.7,hobby
+Math problem set,84,2025-04-20,medium,0.7,education
+Gratitude journaling,22,2025-04-11,medium,0.3,personal
+Group study session,115,2025-04-13,high,0.7,education
+Essay writing,154,2025-04-02,high,1.0,education
+Physical therapy exercises,27,2025-04-10,medium,0.5,health
+Chess tournament prep,112,2025-04-16,low,0.6,hobby
+Financial planning,113,2025-04-14,medium,0.7,personal
+Language practice,50,2025-04-14,medium,0.5,education
+Gardening weekend,175,2025-04-17,medium,0.6,hobby
+Photography walk,84,2025-04-19,medium,0.3,hobby
+Online certification course,95,2025-04-05,medium,0.6,education
+HIIT workout,32,2025-04-21,low,0.6,health
+Garage decluttering,160,2025-04-01,medium,0.5,household
+HIIT workout,38,2025-04-01,high,1.0,health
+Science project research,88,2025-04-19,low,0.6,education
+Watercolor painting,119,2025-04-20,low,0.3,hobby
+Mindfulness meditation,16,2025-04-06,medium,0.3,health
+Professional development reading,49,2025-04-19,low,0.4,education
+Laundry (3 loads),142,2025-04-04,medium,0.6,household
+Chess tournament prep,78,2025-04-06,medium,0.6,hobby
+Pantry reorganization,47,2025-04-13,medium,0.5,household
+Science project research,111,2025-04-04,high,1.0,education
+Seasonal closet swap,72,2025-04-13,high,0.7,household
+Guitar practice session,51,2025-04-03,medium,0.3,hobby
+Personal goal review,32,2025-04-15,high,0.7,personal
+Professional development reading,50,2025-04-13,high,0.6,education
+Relationship check-in,51,2025-04-02,low,0.3,personal
+Watercolor painting,66,2025-04-07,medium,0.3,hobby
+Language practice,38,2025-04-04,medium,0.6,education
+Professional development reading,52,2025-04-04,medium,0.5,education
+Group study session,168,2025-04-20,high,0.7,education
+Physical therapy exercises,25,2025-04-14,low,0.4,health
+Professional development reading,54,2025-04-02,medium,0.5,education
+Language practice,51,2025-04-06,low,0.4,education
+Hydration tracking day,10,2025-04-11,medium,0.3,health
+Gardening weekend,139,2025-04-14,medium,0.6,hobby
+Science project research,61,2025-04-16,medium,0.9,education
+Guitar practice session,34,2025-04-15,high,0.5,hobby
+Gardening weekend,151,2025-04-18,medium,0.4,hobby
+Hydration tracking day,9,2025-04-19,low,0.3,health
+Group study session,118,2025-04-08,high,0.8,education
+Science project research,119,2025-04-10,low,0.7,education
+Mindfulness meditation,12,2025-04-08,medium,0.3,health
+Math problem set,86,2025-04-16,medium,0.7,education
+Meal prep: healthy lunches,111,2025-04-21,high,1.0,health
+Personal goal review,39,2025-04-12,medium,0.6,personal
+Seasonal closet swap,116,2025-04-13,low,0.5,household
+Language practice,46,2025-04-15,low,0.5,education
+Meal prep: healthy lunches,107,2025-04-04,low,0.6,health
+Watercolor painting,81,2025-04-01,low,0.2,hobby
+Creative writing,57,2025-04-21,high,0.4,hobby
+Creative writing,69,2025-04-21,medium,0.4,hobby
+Laundry (3 loads),112,2025-04-11,low,0.5,household
+Gardening weekend,131,2025-04-08,low,0.4,hobby
+Memory organizing (photos/files),94,2025-04-12,medium,0.3,personal
+Annual checkup,70,2025-04-21,low,0.7,health
+Physical therapy exercises,30,2025-04-11,low,0.5,health
+Sleep hygiene routine,16,2025-04-19,high,0.7,health
+Chess tournament prep,93,2025-04-15,medium,0.7,hobby
+Math problem set,84,2025-04-20,medium,0.7,education
+Gratitude journaling,22,2025-04-11,medium,0.3,personal
+Group study session,115,2025-04-13,high,0.7,education
+Essay writing,154,2025-04-02,high,1.0,education
+Physical therapy exercises,27,2025-04-10,medium,0.5,health
+Chess tournament prep,112,2025-04-16,low,0.6,hobby
+Financial planning,113,2025-04-14,medium,0.7,personal
+Language practice,50,2025-04-14,medium,0.5,education
+Gardening weekend,175,2025-04-17,medium,0.6,hobby
+Photography walk,84,2025-04-19,medium,0.3,hobby
+Online certification course,95,2025-04-05,medium,0.6,education
+HIIT workout,32,2025-04-21,low,0.6,health
+Garage decluttering,160,2025-04-01,medium,0.5,household
+HIIT workout,38,2025-04-01,high,1.0,health
+Science project research,88,2025-04-19,low,0.6,education
+Watercolor painting,119,2025-04-20,low,0.3,hobby
+Mindfulness meditation,16,2025-04-06,medium,0.3,health
+Professional development reading,49,2025-04-19,low,0.4,education
+Laundry (3 loads),142,2025-04-04,medium,0.6,household
+Chess tournament prep,78,2025-04-06,medium,0.6,hobby
+Pantry reorganization,47,2025-04-13,medium,0.5,household
+Science project research,111,2025-04-04,high,1.0,education
+Seasonal closet swap,72,2025-04-13,high,0.7,household
+Guitar practice session,51,2025-04-03,medium,0.3,hobby
+Personal goal review,32,2025-04-15,high,0.7,personal
+Professional development reading,50,2025-04-13,high,0.6,education
+Relationship check-in,51,2025-04-02,low,0.3,personal
+Watercolor painting,66,2025-04-07,medium,0.3,hobby
+Language practice,38,2025-04-04,medium,0.6,education
+Professional development reading,52,2025-04-04,medium,0.5,education
+Group study session,168,2025-04-20,high,0.7,education
+Physical therapy exercises,25,2025-04-14,low,0.4,health
+Professional development reading,54,2025-04-02,medium,0.5,education
+Language practice,51,2025-04-06,low,0.4,education
+Hydration tracking day,10,2025-04-11,medium,0.3,health
+Gardening weekend,139,2025-04-14,medium,0.6,hobby
+Science project research,61,2025-04-16,medium,0.9,education
+Guitar practice session,34,2025-04-15,high,0.5,hobby
+Clean oven and stovetop,83,2025-04-16,low,0.6,household
+Learn magic tricks,90,2025-04-04,medium,0.4,hobby
+Watch educational videos,89,2025-04-19,medium,0.4,education
+Wash and vacuum car,74,2025-04-01,medium,0.5,household
+Online course module,71,2025-04-16,low,0.6,education
+Organize digital files,65,2025-04-14,medium,0.6,household
+Wash bedding,58,2025-04-21,medium,0.8,household
+Practice musical instrument,50,2025-04-15,medium,0.4,hobby
+Woodworking project,227,2025-04-10,high,0.7,hobby
+Prepare for certification,204,2025-04-09,medium,1.0,education
+Deep clean bathrooms,88,2025-04-17,medium,0.8,household
+Write thank you notes,40,2025-04-16,high,0.7,personal
+Family phone calls,55,2025-04-13,low,0.5,personal
+Wash and vacuum car,50,2025-04-01,medium,0.6,household
+Practice coding problems,146,2025-04-08,low,0.6,education
+Gardening maintenance,102,2025-04-03,low,0.5,hobby
+Practice foreign language,32,2025-04-10,medium,0.5,education
+Dentist appointment,64,2025-04-06,medium,1.0,health
+Clean patio furniture,73,2025-04-19,medium,0.6,household
+Morning meditation,10,2025-04-02,medium,0.5,health
+Clean oven and stovetop,81,2025-04-06,low,0.6,household
+Organize pantry,88,2025-04-17,low,0.5,household
+Learn calligraphy,78,2025-04-11,low,0.3,hobby
+DIY home decor,93,2025-04-17,low,0.5,hobby
+Practice coding problems,111,2025-04-01,medium,0.9,education
+Evening walk,27,2025-04-07,low,0.4,health
+Create vision board,64,2025-04-01,low,0.4,personal
+Photography session,101,2025-04-06,low,0.3,hobby
+Bake new recipe,137,2025-04-05,high,0.5,hobby
+Practice foreign language,47,2025-04-01,medium,0.6,education
+Morning meditation,22,2025-04-16,low,0.4,health
+Clean window blinds,58,2025-04-05,medium,0.6,household
+Write thank you notes,51,2025-04-17,medium,0.6,personal
+Math problem solving,95,2025-04-20,low,0.5,education
+Read textbook chapter,61,2025-04-06,low,0.5,education
+Organize garage tools,133,2025-04-17,low,0.4,household
+Update resume,100,2025-04-08,medium,0.8,personal
+Literature review,145,2025-04-03,high,1.0,education
+Organize important documents,65,2025-04-20,high,1.0,personal
+Create vision board,59,2025-04-17,medium,0.5,personal
+Learn new software,169,2025-04-18,medium,0.5,education
+Pottery class,156,2025-04-18,high,0.6,hobby
+Family phone calls,30,2025-04-04,medium,0.5,personal
+Start new book,100,2025-04-04,medium,0.4,hobby
+Organize pantry,66,2025-04-08,medium,0.7,household
+Practice foreign language,52,2025-04-05,medium,0.6,education
+Learn calligraphy,86,2025-04-11,medium,0.5,hobby
+Update emergency contacts,20,2025-04-13,low,0.2,personal
+Clean baseboards,63,2025-04-07,medium,0.4,household
+Clean out email inbox,65,2025-04-19,low,0.3,personal
+Wash bedding,31,2025-04-08,high,0.8,household
+Photography session,78,2025-04-01,medium,0.4,hobby
+Organize digital files,61,2025-04-13,medium,0.6,household
+Scrapbooking,130,2025-04-19,high,0.5,hobby
+Cook Dinner,45,2023-11-11,Medium,High,household
+Exercise,60,2023-11-13,Medium,Medium,health
+Grocery Shopping,90,2023-11-16,Medium,Medium,household
+Read,45,2023-11-20,Low,Low,personal
+Call Mom,30,2023-11-18,Medium,Low,personal
+Study,180,2023-11-09,High,High,education
+Clean Room,60,2023-11-17,Low,Medium,household
+Gardening weekend,151,2025-04-18,medium,0.4,hobby
+Hydration tracking day,9,2025-04-19,low,0.3,health
+Group study session,118,2025-04-08,high,0.8,education
+Science project research,119,2025-04-10,low,0.7,education
+Mindfulness meditation,12,2025-04-08,medium,0.3,health
+Math problem set,86,2025-04-16,medium,0.7,education
+Meal prep: healthy lunches,111,2025-04-21,high,1.0,health
+Personal goal review,39,2025-04-12,medium,0.6,personal
+Seasonal closet swap,116,2025-04-13,low,0.5,household
+Language practice,46,2025-04-15,low,0.5,education
+Meal prep: healthy lunches,107,2025-04-04,low,0.6,health
+Watercolor painting,81,2025-04-01,low,0.2,hobby
+Creative writing,57,2025-04-21,high,0.4,hobby
+Creative writing,69,2025-04-21,medium,0.4,hobby
+Laundry (3 loads),112,2025-04-11,low,0.5,household
+Gardening weekend,131,2025-04-08,low,0.4,hobby
+Memory organizing (photos/files),94,2025-04-12,medium,0.3,personal
+Annual checkup,70,2025-04-21,low,0.7,health
+Physical therapy exercises,30,2025-04-11,low,0.5,health
+Sleep hygiene routine,16,2025-04-19,high,0.7,health
+Chess tournament prep,93,2025-04-15,medium,0.7,hobby
+Math problem set,84,2025-04-20,medium,0.7,education
+Gratitude journaling,22,2025-04-11,medium,0.3,personal
+Group study session,115,2025-04-13,high,0.7,education
+Essay writing,154,2025-04-02,high,1.0,education
+Physical therapy exercises,27,2025-04-10,medium,0.5,health
+Chess tournament prep,112,2025-04-16,low,0.6,hobby
+Financial planning,113,2025-04-14,medium,0.7,personal
+Language practice,50,2025-04-14,medium,0.5,education
+Gardening weekend,175,2025-04-17,medium,0.6,hobby
+Photography walk,84,2025-04-19,medium,0.3,hobby
+Online certification course,95,2025-04-05,medium,0.6,education
+HIIT workout,32,2025-04-21,low,0.6,health
+Garage decluttering,160,2025-04-01,medium,0.5,household
+HIIT workout,38,2025-04-01,high,1.0,health
+Science project research,88,2025-04-19,low,0.6,education
+Watercolor painting,119,2025-04-20,low,0.3,hobby
+Mindfulness meditation,16,2025-04-06,medium,0.3,health
+Professional development reading,49,2025-04-19,low,0.4,education
+Laundry (3 loads),142,2025-04-04,medium,0.6,household
+Chess tournament prep,78,2025-04-06,medium,0.6,hobby
+Pantry reorganization,47,2025-04-13,medium,0.5,household
+Science project research,111,2025-04-04,high,1.0,education
+Seasonal closet swap,72,2025-04-13,high,0.7,household
+Guitar practice session,51,2025-04-03,medium,0.3,hobby
+Personal goal review,32,2025-04-15,high,0.7,personal
+Professional development reading,50,2025-04-13,high,0.6,education
+Relationship check-in,51,2025-04-02,low,0.3,personal
+Watercolor painting,66,2025-04-07,medium,0.3,hobby
+Language practice,38,2025-04-04,medium,0.6,education
+Professional development reading,52,2025-04-04,medium,0.5,education
+Group study session,168,2025-04-20,high,0.7,education
+Physical therapy exercises,25,2025-04-14,low,0.4,health
+Professional development reading,54,2025-04-02,medium,0.5,education
+Language practice,51,2025-04-06,low,0.4,education
+Hydration tracking day,10,2025-04-11,medium,0.3,health
+Gardening weekend,139,2025-04-14,medium,0.6,hobby
+Science project research,61,2025-04-16,medium,0.9,education
+Guitar practice session,34,2025-04-15,high,0.5,hobby
+Clean oven and stovetop,83,2025-04-16,low,0.6,household
+Learn magic tricks,90,2025-04-04,medium,0.4,hobby
+Watch educational videos,89,2025-04-19,medium,0.4,education
+Wash and vacuum car,74,2025-04-01,medium,0.5,household
+Online course module,71,2025-04-16,low,0.6,education
+Organize digital files,65,2025-04-14,medium,0.6,household
+Wash bedding,58,2025-04-21,medium,0.8,household
+Practice musical instrument,50,2025-04-15,medium,0.4,hobby
+Woodworking project,227,2025-04-10,high,0.7,hobby
+Prepare for certification,204,2025-04-09,medium,1.0,education
+Deep clean bathrooms,88,2025-04-17,medium,0.8,household
+Write thank you notes,40,2025-04-16,high,0.7,personal
+Family phone calls,55,2025-04-13,low,0.5,personal
+Wash and vacuum car,50,2025-04-01,medium,0.6,household
+Practice coding problems,146,2025-04-08,low,0.6,education
+Gardening maintenance,102,2025-04-03,low,0.5,hobby
+Practice foreign language,32,2025-04-10,medium,0.5,education
+Dentist appointment,64,2025-04-06,medium,1.0,health
+Clean patio furniture,73,2025-04-19,medium,0.6,household
+Morning meditation,10,2025-04-02,medium,0.5,health
+Clean oven and stovetop,81,2025-04-06,low,0.6,household
+Organize pantry,88,2025-04-17,low,0.5,household
+Learn calligraphy,78,2025-04-11,low,0.3,hobby
+DIY home decor,93,2025-04-17,low,0.5,hobby
+Practice coding problems,111,2025-04-01,medium,0.9,education
+Evening walk,27,2025-04-07,low,0.4,health
+Create vision board,64,2025-04-01,low,0.4,personal
+Photography session,101,2025-04-06,low,0.3,hobby
+Bake new recipe,137,2025-04-05,high,0.5,hobby
+Practice foreign language,47,2025-04-01,medium,0.6,education
+Morning meditation,22,2025-04-16,low,0.4,health
+Clean window blinds,58,2025-04-05,medium,0.6,household
+Write thank you notes,51,2025-04-17,medium,0.6,personal
+Math problem solving,95,2025-04-20,low,0.5,education
+Read textbook chapter,61,2025-04-06,low,0.5,education
+Organize garage tools,133,2025-04-17,low,0.4,household
+Update resume,100,2025-04-08,medium,0.8,personal
+Literature review,145,2025-04-03,high,1.0,education
+Organize important documents,65,2025-04-20,high,1.0,personal
+Create vision board,59,2025-04-17,medium,0.5,personal
+Learn new software,169,2025-04-18,medium,0.5,education
+Pottery class,156,2025-04-18,high,0.6,hobby
+Family phone calls,30,2025-04-04,medium,0.5,personal
+Start new book,100,2025-04-04,medium,0.4,hobby
+Organize pantry,66,2025-04-08,medium,0.7,household
+Practice foreign language,52,2025-04-05,medium,0.6,education
+Learn calligraphy,86,2025-04-11,medium,0.5,hobby
+Update emergency contacts,20,2025-04-13,low,0.2,personal
+Clean baseboards,63,2025-04-07,medium,0.4,household
+Clean out email inbox,65,2025-04-19,low,0.3,personal
+Wash bedding,31,2025-04-08,high,0.8,household
+Photography session,78,2025-04-01,medium,0.4,hobby
+Organize digital files,61,2025-04-13,medium,0.6,household
+Scrapbooking,130,2025-04-19,high,0.5,hobby
+Learn calligraphy,63,2025-04-17,medium,0.5,hobby
+Physical therapy,30,2025-04-03,medium,0.8,health
+Create study flashcards,76,2025-04-20,low,0.4,education
+Yoga session,55,2025-04-04,high,0.9,health
+Meal prep for week,156,2025-04-14,high,1.0,health
+Skin care routine,19,2025-04-18,medium,0.3,health
+Practice drone flying,107,2025-04-10,low,0.5,hobby
+Study art history,60,2025-04-08,medium,0.5,education
+Cold shower challenge,6,2025-04-13,low,0.3,health
+Learn perfumery basics,103,2025-04-16,high,0.4,hobby
+Posture correction practice,19,2025-04-06,low,0.5,health
+Clean fireplace,75,2025-04-20,medium,0.6,household
+Clean out rain gutters,131,2025-04-01,medium,0.5,household
+Study urban planning,66,2025-04-13,medium,0.5,education
+Digital detox day,527,2025-04-16,medium,0.3,health
+Build model kit,210,2025-04-12,low,0.5,hobby
+Foam rolling session,26,2025-04-02,medium,0.6,health
+Plan dream vacation,72,2025-04-12,low,0.3,personal
+Learn podcast editing,101,2025-04-10,medium,0.7,education
+Prepare healthy snacks,62,2025-04-18,medium,0.6,health
+Practice debate skills,82,2025-04-02,high,0.9,education
+Try terrarium building,120,2025-04-19,medium,0.6,hobby
+Create inspiration board,176,2025-04-19,high,0.5,personal
+Practice juggling,55,2025-04-15,medium,0.3,hobby
+Organize spice rack,43,2025-04-18,medium,0.6,household
+Practice flower arranging,116,2025-04-03,high,0.6,hobby
+Ear care routine,19,2025-04-02,high,0.6,health
+Learn podcast editing,98,2025-04-20,medium,0.6,education
+Learn video production,161,2025-04-02,low,0.5,education
+Clean behind appliances,90,2025-04-06,medium,0.6,household
+Learn podcast editing,138,2025-04-17,medium,0.6,education
+Create time capsule,97,2025-04-17,medium,0.4,personal
+Organize holiday decorations,164,2025-04-19,low,0.4,household
+Practice architectural sketching,168,2025-04-18,medium,0.5,education
+Study music theory,83,2025-04-01,medium,0.5,education
+Practice juggling,49,2025-04-06,high,0.5,hobby
+Organize cleaning supplies,30,2025-04-14,medium,0.5,household
+Write personal manifesto,144,2025-04-19,high,0.7,personal
+Vision therapy exercises,23,2025-04-16,low,0.4,health
+Cold shower challenge,9,2025-04-11,medium,0.5,health
+Clean patio/deck,107,2025-04-10,low,0.4,household
+Practice astrophotography,106,2025-04-16,medium,0.5,hobby
+Study art history,88,2025-04-07,high,0.6,education
+Build model kit,194,2025-04-13,low,0.3,hobby
+Plan surprise for loved one,73,2025-04-02,medium,0.6,personal
+Plan dream vacation,69,2025-04-04,medium,0.5,personal
+Learn candle making,93,2025-04-20,medium,0.4,hobby
+Practice lock picking,67,2025-04-08,medium,0.6,hobby
+Sun protection check,24,2025-04-04,medium,0.6,health
+Wash exterior doors,73,2025-04-07,low,0.3,household
+Try glass etching,158,2025-04-03,high,0.8,hobby
+Create inspiration board,165,2025-04-09,low,0.4,personal
+Organize medicine cabinet,34,2025-04-07,medium,0.8,health
+Wash light fixtures,54,2025-04-12,medium,0.4,household
+Learn public speaking techniques,82,2025-04-06,high,1.0,education
+Write ethical will,99,2025-04-07,medium,0.5,personal
+Organize digital passwords,85,2025-04-04,high,0.9,household
+Posture correction practice,16,2025-04-14,low,0.5,health
+Ear care routine,20,2025-04-04,medium,0.4,health
+Posture correction practice,20,2025-04-09,medium,0.6,health
+Test smoke detectors,24,2025-04-16,medium,0.9,household
+Practice speed reading,59,2025-04-10,high,0.8,education
+Deep clean carpets,169,2025-04-01,medium,0.7,household
+Sun protection check,28,2025-04-02,high,0.9,health
+Organize digital passwords,111,2025-04-17,medium,0.8,household
+Learn first aid skills,147,2025-04-11,medium,1.0,education
+Vaccuuming,10,2025-03-14,medium,0.6,household
+Grocery Shopping,90,2023-11-16,Medium,Medium,household
+Read,45,2023-11-20,Low,Low,personal
+Call Mom,30,2023-11-18,Medium,Low,personal
+Study,180,2023-11-09,High,High,education
+Clean Room,60,2023-11-17,Low,Medium,household
+Gardening weekend,151,2025-04-18,medium,0.4,hobby
+Hydration tracking day,9,2025-04-19,low,0.3,health
+Group study session,118,2025-04-08,high,0.8,education
+Science project research,119,2025-04-10,low,0.7,education
+Mindfulness meditation,12,2025-04-08,medium,0.3,health
+Math problem set,86,2025-04-16,medium,0.7,education
+Meal prep: healthy lunches,111,2025-04-21,high,1.0,health
+Personal goal review,39,2025-04-12,medium,0.6,personal
+Seasonal closet swap,116,2025-04-13,low,0.5,household
+Language practice,46,2025-04-15,low,0.5,education
+Meal prep: healthy lunches,107,2025-04-04,low,0.6,health
+Watercolor painting,81,2025-04-01,low,0.2,hobby
+Creative writing,57,2025-04-21,high,0.4,hobby
+Creative writing,69,2025-04-21,medium,0.4,hobby
+Laundry (3 loads),112,2025-04-11,low,0.5,household
+Gardening weekend,131,2025-04-08,low,0.4,hobby
+Memory organizing (photos/files),94,2025-04-12,medium,0.3,personal
+Annual checkup,70,2025-04-21,low,0.7,health
+Physical therapy exercises,30,2025-04-11,low,0.5,health
+Sleep hygiene routine,16,2025-04-19,high,0.7,health
+Chess tournament prep,93,2025-04-15,medium,0.7,hobby
+Math problem set,84,2025-04-20,medium,0.7,education
+Gratitude journaling,22,2025-04-11,medium,0.3,personal
+Group study session,115,2025-04-13,high,0.7,education
+Essay writing,154,2025-04-02,high,1.0,education
+Physical therapy exercises,27,2025-04-10,medium,0.5,health
+Chess tournament prep,112,2025-04-16,low,0.6,hobby
+Financial planning,113,2025-04-14,medium,0.7,personal
+Language practice,50,2025-04-14,medium,0.5,education
+Gardening weekend,175,2025-04-17,medium,0.6,hobby
+Photography walk,84,2025-04-19,medium,0.3,hobby
+Online certification course,95,2025-04-05,medium,0.6,education
+HIIT workout,32,2025-04-21,low,0.6,health
+Garage decluttering,160,2025-04-01,medium,0.5,household
+HIIT workout,38,2025-04-01,high,1.0,health
+Science project research,88,2025-04-19,low,0.6,education
+Watercolor painting,119,2025-04-20,low,0.3,hobby
+Mindfulness meditation,16,2025-04-06,medium,0.3,health
+Professional development reading,49,2025-04-19,low,0.4,education
+Laundry (3 loads),142,2025-04-04,medium,0.6,household
+Chess tournament prep,78,2025-04-06,medium,0.6,hobby
+Pantry reorganization,47,2025-04-13,medium,0.5,household
+Science project research,111,2025-04-04,high,1.0,education
+Seasonal closet swap,72,2025-04-13,high,0.7,household
+Guitar practice session,51,2025-04-03,medium,0.3,hobby
+Personal goal review,32,2025-04-15,high,0.7,personal
+Professional development reading,50,2025-04-13,high,0.6,education
+Relationship check-in,51,2025-04-02,low,0.3,personal
+Watercolor painting,66,2025-04-07,medium,0.3,hobby
+Language practice,38,2025-04-04,medium,0.6,education
+Professional development reading,52,2025-04-04,medium,0.5,education
+Group study session,168,2025-04-20,high,0.7,education
+Physical therapy exercises,25,2025-04-14,low,0.4,health
+Professional development reading,54,2025-04-02,medium,0.5,education
+Language practice,51,2025-04-06,low,0.4,education
+Hydration tracking day,10,2025-04-11,medium,0.3,health
+Gardening weekend,139,2025-04-14,medium,0.6,hobby
+Science project research,61,2025-04-16,medium,0.9,education
+Guitar practice session,34,2025-04-15,high,0.5,hobby
+Clean oven and stovetop,83,2025-04-16,low,0.6,household
+Learn magic tricks,90,2025-04-04,medium,0.4,hobby
+Watch educational videos,89,2025-04-19,medium,0.4,education
+Wash and vacuum car,74,2025-04-01,medium,0.5,household
+Online course module,71,2025-04-16,low,0.6,education
+Organize digital files,65,2025-04-14,medium,0.6,household
+Wash bedding,58,2025-04-21,medium,0.8,household
+Practice musical instrument,50,2025-04-15,medium,0.4,hobby
+Woodworking project,227,2025-04-10,high,0.7,hobby
+Prepare for certification,204,2025-04-09,medium,1.0,education
+Deep clean bathrooms,88,2025-04-17,medium,0.8,household
+Write thank you notes,40,2025-04-16,high,0.7,personal
+Family phone calls,55,2025-04-13,low,0.5,personal
+Wash and vacuum car,50,2025-04-01,medium,0.6,household
+Practice coding problems,146,2025-04-08,low,0.6,education
+Gardening maintenance,102,2025-04-03,low,0.5,hobby
+Practice foreign language,32,2025-04-10,medium,0.5,education
+Dentist appointment,64,2025-04-06,medium,1.0,health
+Clean patio furniture,73,2025-04-19,medium,0.6,household
+Morning meditation,10,2025-04-02,medium,0.5,health
+Clean oven and stovetop,81,2025-04-06,low,0.6,household
+Organize pantry,88,2025-04-17,low,0.5,household
+Learn calligraphy,78,2025-04-11,low,0.3,hobby
+DIY home decor,93,2025-04-17,low,0.5,hobby
+Practice coding problems,111,2025-04-01,medium,0.9,education
+Evening walk,27,2025-04-07,low,0.4,health
+Create vision board,64,2025-04-01,low,0.4,personal
+Photography session,101,2025-04-06,low,0.3,hobby
+Bake new recipe,137,2025-04-05,high,0.5,hobby
+Practice foreign language,47,2025-04-01,medium,0.6,education
+Morning meditation,22,2025-04-16,low,0.4,health
+Clean window blinds,58,2025-04-05,medium,0.6,household
+Write thank you notes,51,2025-04-17,medium,0.6,personal
+Math problem solving,95,2025-04-20,low,0.5,education
+Read textbook chapter,61,2025-04-06,low,0.5,education
+Organize garage tools,133,2025-04-17,low,0.4,household
+Update resume,100,2025-04-08,medium,0.8,personal
+Literature review,145,2025-04-03,high,1.0,education
+Organize important documents,65,2025-04-20,high,1.0,personal
+Create vision board,59,2025-04-17,medium,0.5,personal
+Learn new software,169,2025-04-18,medium,0.5,education
+Pottery class,156,2025-04-18,high,0.6,hobby
+Family phone calls,30,2025-04-04,medium,0.5,personal
+Start new book,100,2025-04-04,medium,0.4,hobby
+Organize pantry,66,2025-04-08,medium,0.7,household
+Practice foreign language,52,2025-04-05,medium,0.6,education
+Learn calligraphy,86,2025-04-11,medium,0.5,hobby
+Update emergency contacts,20,2025-04-13,low,0.2,personal
+Clean baseboards,63,2025-04-07,medium,0.4,household
+Clean out email inbox,65,2025-04-19,low,0.3,personal
+Wash bedding,31,2025-04-08,high,0.8,household
+Photography session,78,2025-04-01,medium,0.4,hobby
+Organize digital files,61,2025-04-13,medium,0.6,household
+Scrapbooking,130,2025-04-19,high,0.5,hobby
+Learn calligraphy,63,2025-04-17,medium,0.5,hobby
+Physical therapy,30,2025-04-03,medium,0.8,health
+Create study flashcards,76,2025-04-20,low,0.4,education
+Yoga session,55,2025-04-04,high,0.9,health
+Meal prep for week,156,2025-04-14,high,1.0,health
+Skin care routine,19,2025-04-18,medium,0.3,health
+Practice drone flying,107,2025-04-10,low,0.5,hobby
+Study art history,60,2025-04-08,medium,0.5,education
+Cold shower challenge,6,2025-04-13,low,0.3,health
+Learn perfumery basics,103,2025-04-16,high,0.4,hobby
+Posture correction practice,19,2025-04-06,low,0.5,health
+Clean fireplace,75,2025-04-20,medium,0.6,household
+Clean out rain gutters,131,2025-04-01,medium,0.5,household
+Study urban planning,66,2025-04-13,medium,0.5,education
+Digital detox day,527,2025-04-16,medium,0.3,health
+Build model kit,210,2025-04-12,low,0.5,hobby
+Foam rolling session,26,2025-04-02,medium,0.6,health
+Plan dream vacation,72,2025-04-12,low,0.3,personal
+Learn podcast editing,101,2025-04-10,medium,0.7,education
+Prepare healthy snacks,62,2025-04-18,medium,0.6,health
+Practice debate skills,82,2025-04-02,high,0.9,education
+Try terrarium building,120,2025-04-19,medium,0.6,hobby
+Create inspiration board,176,2025-04-19,high,0.5,personal
+Practice juggling,55,2025-04-15,medium,0.3,hobby
+Organize spice rack,43,2025-04-18,medium,0.6,household
+Practice flower arranging,116,2025-04-03,high,0.6,hobby
+Ear care routine,19,2025-04-02,high,0.6,health
+Learn podcast editing,98,2025-04-20,medium,0.6,education
+Learn video production,161,2025-04-02,low,0.5,education
+Clean behind appliances,90,2025-04-06,medium,0.6,household
+Learn podcast editing,138,2025-04-17,medium,0.6,education
+Create time capsule,97,2025-04-17,medium,0.4,personal
+Organize holiday decorations,164,2025-04-19,low,0.4,household
+Practice architectural sketching,168,2025-04-18,medium,0.5,education
+Study music theory,83,2025-04-01,medium,0.5,education
+Practice juggling,49,2025-04-06,high,0.5,hobby
+Organize cleaning supplies,30,2025-04-14,medium,0.5,household
+Write personal manifesto,144,2025-04-19,high,0.7,personal
+Vision therapy exercises,23,2025-04-16,low,0.4,health
+Cold shower challenge,9,2025-04-11,medium,0.5,health
+Clean patio/deck,107,2025-04-10,low,0.4,household
+Practice astrophotography,106,2025-04-16,medium,0.5,hobby
+Study art history,88,2025-04-07,high,0.6,education
+Build model kit,194,2025-04-13,low,0.3,hobby
+Plan surprise for loved one,73,2025-04-02,medium,0.6,personal
+Plan dream vacation,69,2025-04-04,medium,0.5,personal
+Learn candle making,93,2025-04-20,medium,0.4,hobby
+Practice lock picking,67,2025-04-08,medium,0.6,hobby
+Sun protection check,24,2025-04-04,medium,0.6,health
+Wash exterior doors,73,2025-04-07,low,0.3,household
+Try glass etching,158,2025-04-03,high,0.8,hobby
+Create inspiration board,165,2025-04-09,low,0.4,personal
+Organize medicine cabinet,34,2025-04-07,medium,0.8,health
+Wash light fixtures,54,2025-04-12,medium,0.4,household
+Learn public speaking techniques,82,2025-04-06,high,1.0,education
+Write ethical will,99,2025-04-07,medium,0.5,personal
+Organize digital passwords,85,2025-04-04,high,0.9,household
+Posture correction practice,16,2025-04-14,low,0.5,health
+Ear care routine,20,2025-04-04,medium,0.4,health
+Posture correction practice,20,2025-04-09,medium,0.6,health
+Test smoke detectors,24,2025-04-16,medium,0.9,household
+Practice speed reading,59,2025-04-10,high,0.8,education
+Deep clean carpets,169,2025-04-01,medium,0.7,household
+Sun protection check,28,2025-04-02,high,0.9,health
+Organize digital passwords,111,2025-04-17,medium,0.8,household
+Learn first aid skills,147,2025-04-11,medium,1.0,education
+Try a new board game,64,2025-04-01,high,0.8,hobby
+Organize personal documents,84,2025-04-18,medium,0.7,personal
+Review an online course module,74,2025-04-16,high,1.0,education
+Prepare a high-protein meal,66,2025-04-04,medium,0.7,health
+Work on a 3D puzzle,148,2025-04-11,low,0.4,hobby
+Do a full-body stretching routine,40,2025-04-06,low,0.5,health
+Review an online course module,87,2025-04-17,medium,0.8,education
+Organize personal documents,101,2025-04-04,medium,0.7,personal
+Try a yoga session,35,2025-04-12,medium,0.8,health
+Sort and recycle old papers,102,2025-04-19,medium,0.6,household
+Review an online course module,89,2025-04-19,high,1.0,education
+Go for a nature walk,83,2025-04-06,low,0.4,health
+Take notes on a podcast,86,2025-04-17,low,0.5,education
+Replace air filters,45,2025-04-02,high,1.0,household
+Organize personal documents,115,2025-04-07,high,0.8,personal
+Read a chapter of a non-fiction book,53,2025-04-08,low,0.6,education
+Experiment with watercolor painting,110,2025-04-15,low,0.4,hobby
+Replace air filters,38,2025-04-18,high,1.0,household
+Try a new knitting pattern,92,2025-04-02,low,0.3,hobby
+Practice mindfulness meditation,15,2025-04-12,high,0.9,health
+Prepare a high-protein meal,75,2025-04-07,medium,0.7,health
+Try a new knitting pattern,96,2025-04-12,high,0.7,hobby
+Organize tool shed,147,2025-04-14,low,0.5,household
+Watch a TED talk,28,2025-04-13,medium,0.5,education
+Write a gratitude list,16,2025-04-11,medium,0.5,personal
+Set monthly financial goals,53,2025-04-14,low,0.7,personal
+Write a letter to a friend,37,2025-04-10,high,0.7,personal
+Prepare a high-protein meal,85,2025-04-20,high,1.0,health
+Read a chapter of a non-fiction book,52,2025-04-20,low,0.5,education
+Review an online course module,67,2025-04-08,medium,0.8,education
+Work on a 3D puzzle,123,2025-04-08,medium,0.7,hobby
+Sort and recycle old papers,84,2025-04-01,medium,0.5,household
+Practice photography skills,88,2025-04-10,high,1.0,hobby
+Read a chapter of a non-fiction book,46,2025-04-14,medium,0.6,education
+Clean baseboards,47,2025-04-19,low,0.4,household
+Work on a 3D puzzle,168,2025-04-01,low,0.4,hobby
+Take notes on a podcast,57,2025-04-16,low,0.5,education
+Go for a nature walk,67,2025-04-05,medium,0.5,health
+Set monthly financial goals,69,2025-04-13,medium,0.8,personal
+Do a full-body stretching routine,38,2025-04-14,medium,0.6,health
+Read a chapter of a non-fiction book,36,2025-04-03,low,0.6,education
+Try a yoga session,40,2025-04-17,medium,0.7,health
+Practice mindfulness meditation,20,2025-04-04,medium,0.5,health
+Practice mindfulness meditation,18,2025-04-06,high,0.8,health
+Practice mindfulness meditation,23,2025-04-04,medium,0.6,health
+Write a gratitude list,20,2025-04-06,medium,0.5,personal
+Write a letter to a friend,36,2025-04-10,low,0.5,personal
+Read a chapter of a non-fiction book,38,2025-04-04,high,0.9,education
+Try a new knitting pattern,100,2025-04-13,medium,0.4,hobby
+Work on a 3D puzzle,140,2025-04-01,low,0.5,hobby
+Review an online course module,93,2025-04-09,medium,0.8,education
+Practice mindfulness meditation,27,2025-04-13,medium,0.5,health
+Try a yoga session,51,2025-04-13,high,1.0,health
+Try a new knitting pattern,99,2025-04-19,medium,0.5,hobby
+Prepare a high-protein meal,90,2025-04-12,medium,0.7,health
+Solve a logic puzzle,34,2025-04-06,medium,0.5,education
+Go for a nature walk,54,2025-04-04,low,0.4,health
+Experiment with watercolor painting,95,2025-04-08,high,0.6,hobby
+Prepare a high-protein meal,86,2025-04-03,medium,0.9,health
+Eat a healthy snack,20,2025-04-02,low,0.5,health
+Stretch for a few minutes,17,2025-04-15,low,0.7,health
+Take some photos,17,2025-04-15,medium,0.6,hobby
+Do 10 push-ups,5,2025-04-13,low,0.5,health
+Take out the trash,18,2025-04-11,low,0.8,household
+Vacuum the living room,55,2025-04-02,medium,0.7,household
+Go for a short walk,26,2025-04-06,low,0.5,health
+Go for a short walk,22,2025-04-10,medium,0.8,health
+Listen to a podcast,31,2025-04-21,medium,0.7,hobby
+Watch a short educational video,32,2025-04-08,medium,0.8,education
+Call a friend,23,2025-04-13,high,1.0,personal
+Write a to-do list,10,2025-04-02,low,0.7,personal
+Drink a glass of water,5,2025-04-01,high,1.0,health
+Wash the dishes,26,2025-04-05,medium,0.9,household
+Do the laundry,89,2025-04-07,low,0.6,household
+Take some photos,28,2025-04-15,medium,0.7,hobby
+Do 10 push-ups,7,2025-04-08,medium,0.7,health
+Take some photos,23,2025-04-04,low,0.5,hobby
+Take out the trash,10,2025-04-21,high,1.0,household
+Do the laundry,63,2025-04-05,medium,0.9,household
+Eat a healthy snack,15,2025-04-11,medium,0.6,health
+Take some photos,19,2025-04-15,low,0.6,hobby
+Read a short article,24,2025-04-17,low,0.5,education
+Vacuum the living room,58,2025-04-07,high,0.9,household
+Read a short article,21,2025-04-06,medium,0.7,education
+Listen to a song you like,8,2025-04-11,high,0.6,personal
+Listen to a podcast,28,2025-04-11,low,0.6,hobby
+Take a deep breath and relax,6,2025-04-05,medium,0.9,personal
+Organize your desk,32,2025-04-21,medium,0.6,personal
+Organize your desk,37,2025-04-15,medium,0.6,personal
+Go for a short walk,24,2025-04-16,medium,0.7,health
+Write a short poem,23,2025-04-19,low,0.4,hobby
+Take some photos,27,2025-04-08,low,0.5,hobby
+Read a short article,17,2025-04-16,medium,0.7,education
+Drink a glass of water,8,2025-04-19,high,1.0,health
+Do 10 push-ups,8,2025-04-18,high,0.8,health
+Write a short poem,13,2025-04-18,low,0.4,hobby
+Wash the dishes,21,2025-04-02,medium,1.0,household
+Draw something simple,27,2025-04-01,high,0.6,hobby
+Listen to a podcast,21,2025-04-14,medium,0.7,hobby
+Go for a short walk,35,2025-04-21,low,0.6,health
+Wipe down kitchen counters,29,2025-04-03,high,0.9,household
+Wipe down kitchen counters,27,2025-04-02,low,0.4,household
+Do the laundry,76,2025-04-21,medium,0.7,household
+Wash the dishes,40,2025-04-20,low,0.8,household
+Write a short poem,27,2025-04-07,low,0.4,hobby
+Vacuum the living room,46,2025-04-08,medium,0.7,household
+Take out the trash,11,2025-04-10,high,1.0,household
+Practice basic math,35,2025-04-16,high,0.7,education
+Take out the trash,12,2025-04-10,medium,0.9,household
+Practice basic math,55,2025-04-17,medium,0.5,education
+Write a paragraph about your day,10,2025-04-10,high,0.7,education
+Draw something simple,23,2025-04-03,low,0.4,hobby
+Play a game,45,2025-04-12,low,0.6,hobby
+Write a paragraph about your day,15,2025-04-02,low,0.5,education
+Draw something simple,24,2025-04-16,high,0.6,hobby
+Wash the dishes,27,2025-04-03,high,1.0,household
+Learn a new word,8,2025-04-07,low,0.4,education
+Take some photos,30,2025-04-01,medium,0.6,hobby
+Read a short article,23,2025-04-11,low,0.6,education
+Take some photos,29,2025-04-11,medium,0.6,hobby
+Eat a healthy snack,16,2025-04-16,medium,0.5,health
+Drink a glass of water,9,2025-04-07,medium,1.0,health
+Call a friend,36,2025-04-14,low,0.6,personal
+Listen to a song you like,6,2025-04-02,low,0.5,personal
+Learn a new word,10,2025-04-08,low,0.3,education
+Play a game,35,2025-04-17,medium,0.7,hobby
+Practice basic math,43,2025-04-11,high,0.8,education
+Drink a glass of water,6,2025-04-14,low,0.8,health
+Listen to a song you like,9,2025-04-15,medium,0.5,personal
+Wash the dishes,39,2025-04-05,low,0.8,household
+Listen to a podcast,29,2025-04-12,low,0.6,hobby
+Watch a short educational video,33,2025-04-14,low,0.7,education
+Organize your desk,40,2025-04-11,medium,0.7,personal
+Write a short poem,22,2025-04-14,low,0.4,hobby
+Write a paragraph about your day,20,2025-04-02,low,0.4,education
+Stretch for a few minutes,16,2025-04-06,low,0.6,health
+Write a paragraph about your day,19,2025-04-18,high,0.7,education
+Organize your desk,50,2025-04-16,high,0.8,personal
+Write a short poem,21,2025-04-05,low,0.4,hobby
+Write a short poem,24,2025-04-02,high,0.7,hobby
+Eat a healthy snack,19,2025-04-03,medium,0.7,health
+Write a to-do list,11,2025-04-06,medium,0.9,personal
+Listen to a podcast,20,2025-04-21,medium,0.7,hobby
+Go for a short walk,40,2025-04-13,medium,0.6,health
+Organize your desk,31,2025-04-19,low,0.4,personal
+Go for a short walk,25,2025-04-10,medium,0.7,health
+Do 10 push-ups,9,2025-04-19,medium,0.7,health
+Write a short poem,14,2025-04-19,high,0.7,hobby
+Wash the dishes,38,2025-04-05,medium,0.8,household
+Watch a short educational video,20,2025-04-15,low,0.6,education
+Take a deep breath and relax,9,2025-04-05,medium,1.0,personal
+Stretch for a few minutes,14,2025-04-16,low,0.7,health
+Read a short article,30,2025-04-15,low,0.5,education
+Wash the dishes,36,2025-04-04,low,0.6,household
+Watch a short educational video,38,2025-04-10,low,0.6,education
+Watch a short educational video,24,2025-04-05,high,0.9,education
+Read a short article,20,2025-04-18,low,0.5,education
+Listen to a song you like,7,2025-04-20,medium,0.6,personal
+Write a paragraph about your day,11,2025-04-03,low,0.4,education
+Eat a healthy snack,24,2025-04-09,medium,0.5,health
+Drink a glass of water,10,2025-04-06,medium,0.9,health
+Watch a short educational video,25,2025-04-09,medium,0.7,education
+Eat a healthy snack,30,2025-04-03,medium,0.6,health
+Learn a new word,5,2025-04-01,medium,0.3,education
+Do some deep breathing,5,2025-04-03,medium,0.9,health
+Sweep the floor,10,2025-04-11,medium,1.0,household
+Write down one new fact you learned,10,2025-04-13,medium,0.6,education
+Stretch your legs,20,2025-04-09,low,0.7,health
+Write a few sentences about your day,17,2025-04-02,medium,0.6,hobby
+Try a new recipe,49,2025-04-20,high,1.0,hobby
+Organize your wallet or bag,25,2025-04-09,low,0.5,personal
+Drink a glass of water,10,2025-04-21,high,1.0,health
+Take a short break from screens,22,2025-04-04,high,1.0,personal
+Look through old photos,14,2025-04-02,low,0.5,personal
+Try a new recipe,48,2025-04-05,medium,0.7,hobby
+Practice a few new words in another language,12,2025-04-19,medium,0.7,education
+Read a page of a book,6,2025-04-16,medium,0.8,education
+Read a page of a book,10,2025-04-21,medium,0.6,education
+Drink a glass of water,6,2025-04-06,high,1.0,health
+Write down three things you're grateful for,10,2025-04-12,medium,1.0,personal
+Watch a short documentary clip,14,2025-04-18,medium,0.9,education
+Take a nature photo,16,2025-04-03,medium,0.8,hobby
+Dust the shelves,23,2025-04-14,medium,0.7,household
+Stand up and move around,6,2025-04-17,high,1.0,health
+Listen to a new song,10,2025-04-17,low,0.5,hobby
+Clean the bathroom mirror,10,2025-04-03,high,0.7,household
+Drink a glass of water,7,2025-04-10,medium,1.0,health
+Look through old photos,20,2025-04-08,low,0.6,personal
+Eat a fruit,6,2025-04-13,medium,0.6,health
+Watch a short documentary clip,15,2025-04-05,low,0.6,education
+Practice a few new words in another language,13,2025-04-08,high,1.0,education
+Make the bed,5,2025-04-18,medium,0.8,household
+Eat a fruit,12,2025-04-14,high,0.8,health
+Draw a doodle,5,2025-04-04,medium,0.5,hobby
+Make the bed,8,2025-04-21,high,0.9,household
+Read a page of a book,8,2025-04-04,medium,0.7,education
+Write down three things you're grateful for,9,2025-04-14,low,0.8,personal
+Write down three things you're grateful for,5,2025-04-07,low,0.7,personal
+Look through old photos,12,2025-04-01,medium,0.6,personal
+Try a new recipe,57,2025-04-14,low,0.7,hobby
+Make the bed,9,2025-04-14,low,0.6,household
+Take out the recycling,10,2025-04-21,high,1.0,household
+Eat a fruit,8,2025-04-05,medium,0.7,health
+Listen to a new song,8,2025-04-01,low,0.6,hobby
+Take out the recycling,13,2025-04-16,medium,0.9,household
+Take a short break from screens,10,2025-04-03,high,0.8,personal
+Sweep the floor,19,2025-04-19,high,1.0,household
+Make the bed,7,2025-04-21,low,0.6,household
+Stand up and move around,10,2025-04-13,medium,1.0,health
+Practice a few new words in another language,14,2025-04-20,medium,0.7,education
+Draw a doodle,7,2025-04-12,high,0.7,hobby
+Organize your wallet or bag,20,2025-04-13,medium,0.7,personal
+Stand up and move around,8,2025-04-21,medium,0.9,health
+Stand up and move around,7,2025-04-12,low,0.8,health
+Write down one new fact you learned,7,2025-04-15,medium,0.6,education
+Stretch for a few minutes,7,2025-04-16,medium,1.0,health
+Write down a new word you learned,5,2025-04-12,low,0.4,education
+Try cooking something easy,55,2025-04-07,medium,0.8,hobby
+Learn a fact about history,9,2025-04-17,medium,0.5,education
+Eat a healthy snack,7,2025-04-02,medium,0.7,health
+Write down something good that happened today,11,2025-04-20,medium,1.0,personal
+Drink a glass of water,6,2025-04-09,medium,1.0,health
+Read one page of a book,7,2025-04-21,medium,0.8,education
+Try cooking something easy,57,2025-04-02,medium,0.8,hobby
+Try cooking something easy,60,2025-04-09,medium,0.7,hobby
+Eat a healthy snack,10,2025-04-15,low,0.5,health
+Take a picture of something nice,15,2025-04-13,medium,0.8,hobby
+Drink a glass of water,7,2025-04-01,medium,1.0,health
+Drink a glass of water,10,2025-04-11,low,0.8,health
+Take a short break from your phone,30,2025-04-09,medium,0.8,personal
+Learn a fact about history,6,2025-04-01,medium,0.6,education
+Practice a math problem,14,2025-04-02,medium,0.7,education
+Write down a new word you learned,9,2025-04-20,high,0.7,education
+Send a nice message to a friend,8,2025-04-11,low,0.7,personal
+Write down something good that happened today,8,2025-04-19,low,0.8,personal
+Write down a new word you learned,8,2025-04-18,medium,0.5,education
+Write a short note about your day,18,2025-04-06,medium,0.6,hobby
+Do 10 push-ups,9,2025-04-04,medium,0.8,health
+Stretch for a few minutes,6,2025-04-10,high,1.0,health
+Read one page of a book,10,2025-04-15,medium,0.8,education
+Stretch for a few minutes,14,2025-04-08,medium,0.9,health
+Draw something simple,9,2025-04-08,medium,0.5,hobby
+Read one page of a book,6,2025-04-11,medium,0.7,education
+Write down a new word you learned,7,2025-04-05,medium,0.6,education
+Vacuum the floor,25,2025-04-16,low,0.7,household
+Take a picture of something nice,10,2025-04-08,medium,0.7,hobby
+Clean up your desk,27,2025-04-02,low,0.4,personal
+Stretch for a few minutes,5,2025-04-10,high,1.0,health
+Take deep breaths,8,2025-04-12,low,0.4,health
+Water the plants,7,2025-04-02,low,0.5,household
+Eat a healthy snack,8,2025-04-07,medium,0.6,health
+Clean up your desk,24,2025-04-14,high,0.7,personal
+Water the plants,8,2025-04-04,high,0.8,household
+Write a short note about your day,13,2025-04-13,medium,0.5,hobby
+Watch a short educational video,18,2025-04-07,medium,0.8,education
+Learn a fact about history,7,2025-04-18,medium,0.6,education
+Clean up your desk,30,2025-04-19,low,0.5,personal
+Draw something simple,10,2025-04-19,medium,0.5,hobby
+Eat a healthy snack,5,2025-04-15,medium,0.6,health
+Write down something good that happened today,5,2025-04-01,high,1.0,personal
+Practice a math problem,10,2025-04-02,medium,0.6,education
+Listen to a song you like,9,2025-04-01,medium,0.7,hobby
+Take a short break from your phone,13,2025-04-18,medium,0.7,personal
+Look at old pictures,11,2025-04-13,medium,0.5,personal
+Drink a glass of water,5,2025-04-15,medium,1.0,health
+Vacuum the floor,15,2025-04-19,high,1.0,household
+Try a brain teaser,5,2025-04-04,medium,0.6,education
+Go for a short walk,16,2025-04-08,low,0.6,health
+Write a short poem or joke,18,2025-04-13,low,0.5,hobby
+Sit and breathe deeply for a minute,1,2025-04-04,low,0.7,health
+Do 20 jumping jacks,9,2025-04-15,low,0.6,health
+Organize your wallet or bag,18,2025-04-06,medium,0.9,personal
+Hum or sing a song you like,8,2025-04-15,medium,0.5,hobby
+Look up a word in the dictionary,10,2025-04-08,medium,0.7,education
+Listen to a podcast for 5 minutes,9,2025-04-04,medium,0.6,hobby
+Try doodling something new,5,2025-04-06,medium,0.4,hobby
+Listen to a podcast for 5 minutes,7,2025-04-17,low,0.6,hobby
+Hum or sing a song you like,7,2025-04-20,medium,0.5,hobby
+Take out recycling,15,2025-04-11,medium,1.0,household
+Organize your wallet or bag,20,2025-04-13,medium,0.7,personal
+Wipe down the bathroom sink,7,2025-04-14,low,0.7,household
+Try a brain teaser,10,2025-04-14,low,0.6,education
+Check your posture,3,2025-04-09,medium,0.7,health
+Write down a fun fact,9,2025-04-03,low,0.5,education
+Send a text to a loved one,9,2025-04-06,low,0.7,personal
+Do 20 jumping jacks,6,2025-04-02,medium,0.8,health
+Check your posture,4,2025-04-17,medium,0.6,health
+Make the bed,8,2025-04-18,low,0.7,household
+Sit and breathe deeply for a minute,5,2025-04-03,low,0.8,health
+Listen to a podcast for 5 minutes,5,2025-04-09,low,0.6,hobby
+Read a short article,13,2025-04-05,medium,0.7,education
+Hum or sing a song you like,10,2025-04-13,medium,0.7,hobby
+Sort laundry,20,2025-04-04,high,0.9,household
+Eat a piece of fruit,6,2025-04-19,low,0.6,health
+Do 20 jumping jacks,8,2025-04-13,low,0.7,health
+Solve a quick puzzle,12,2025-04-09,low,0.7,education
+Check your posture,1,2025-04-05,medium,0.6,health
+Read a short article,20,2025-04-11,low,0.5,education
+Eat a piece of fruit,9,2025-04-16,medium,0.8,health
+Try doodling something new,11,2025-04-02,medium,0.6,hobby
+Sort laundry,12,2025-04-20,medium,0.7,household
+Send a text to a loved one,7,2025-04-08,medium,1.0,personal
+Hum or sing a song you like,9,2025-04-08,medium,0.5,hobby
+Read a short article,18,2025-04-06,low,0.5,education
+Sit and breathe deeply for a minute,2,2025-04-10,medium,0.9,health
+Dust the shelves,14,2025-04-17,medium,0.6,household
+Make the bed,10,2025-04-16,low,0.7,household
+Write down a fun fact,6,2025-04-01,low,0.4,education
+Try doodling something new,9,2025-04-12,medium,0.5,hobby
+Send a text to a loved one,6,2025-04-04,medium,0.8,personal
+Sit and breathe deeply for a minute,3,2025-04-16,high,1.0,health
+Sort laundry,16,2025-04-20,high,0.9,household
+Write down three things you're grateful for,6,2025-04-16,high,1.0,personal
+Go for a short walk,11,2025-04-03,medium,0.7,health
+Go for a short walk,13,2025-04-10,high,1.0,health
+Write down a fun fact,7,2025-04-08,low,0.6,education
+Write a short poem or joke,19,2025-04-19,medium,0.6,hobby
+Look up a word in the dictionary,5,2025-04-17,medium,0.8,education
+Check your posture,2,2025-04-12,medium,0.5,health
+Go for a short walk,20,2025-04-18,high,1.0,health
+Make the bed,9,2025-04-03,high,1.0,household
+Look up a word in the dictionary,5,2025-04-03,medium,0.8,education
+Fold laundry,19,2025-04-16,high,1.0,household
+Dust the shelves,15,2025-04-11,medium,0.6,household
+Write down three things you're grateful for,9,2025-04-11,low,0.7,personal
+Do math homework,12,2025-04-20,medium,0.9,education
+Organize your wallet or bag,20,2025-04-18,medium,0.8,personal
+Read a short article,15,2025-04-11,low,0.5,education
+Fold laundry,12,2025-04-21,medium,0.8,household
+Organize your wallet or bag,17,2025-04-16,low,0.7,personal
+Write a short poem or joke,18,2025-04-22,high,0.8,hobby
+Write essay,11,2025-04-03,high,0.7,education
+Read a short article,12,2025-04-07,low,0.6,education
+Sit and breathe deeply for a minute,2,2025-04-19,medium,0.9,health
+Write essay,7,2025-04-08,low,0.4,education
+Email teacher,10,2025-04-21,low,0.4,education
+Look up a word in the dictionary,9,2025-04-07,medium,0.8,education
+Go for a short walk,20,2025-04-17,medium,0.6,health
+Take a short break outside,11,2025-04-15,medium,0.7,personal
+Try doodling something new,5,2025-04-04,low,0.4,hobby
+Read a short article,10,2025-04-19,medium,0.7,education
+Write essay,5,2025-04-12,medium,0.6,education
+Email teacher,9,2025-04-12,low,0.4,education
+Fold laundry,18,2025-04-20,low,0.5,household
+Wipe down the bathroom sink,5,2025-04-20,medium,0.9,household
+Email teacher,8,2025-04-11,medium,0.6,education
+Wipe down the bathroom sink,6,2025-04-11,high,1.0,household
+Hum or sing a song you like,8,2025-04-06,medium,0.7,hobby
+Do math homework,13,2025-04-19,medium,0.7,education
+Email teacher,7,2025-04-15,medium,0.5,education
+Fold laundry,16,2025-04-06,high,0.9,household
+Write essay,8,2025-04-17,medium,0.6,education
+Send a text to a loved one,7,2025-04-06,medium,0.9,personal
+Dust the shelves,13,2025-04-04,medium,0.6,household
+Do math homework,15,2025-04-07,high,1.0,education
+Make the bed,5,2025-04-20,low,0.6,household
+Do 20 jumping jacks,9,2025-04-09,low,0.7,health
+Watch a short educational video,5,2025-04-17,high,0.8,education
+Organize a drawer,15,2025-04-10,high,0.8,household
+Go for a short walk,18,2025-04-09,high,0.9,health
+Try doodling something new,9,2025-04-06,medium,0.5,hobby
+Try doodling something new,14,2025-04-06,medium,0.5,hobby
+Organize a drawer,12,2025-04-05,low,0.5,household
+Try a brain teaser,8,2025-04-11,high,0.7,education
+Watch a short educational video,14,2025-04-10,medium,0.8,education
+Write down a fun fact,9,2025-04-21,medium,0.5,education
+Hum or sing a song you like,5,2025-04-13,medium,0.7,hobby
+Watch a short educational video,10,2025-04-16,medium,0.6,education
+Water the plants,9,2025-04-18,low,0.6,household
+Write a short journal entry,12,2025-04-20,medium,0.7,personal
+Write a short poem or joke,17,2025-04-03,low,0.5,hobby
+Write down a fun fact,5,2025-04-09,low,0.5,education
+Listen to a podcast for 5 minutes,8,2025-04-19,low,0.6,hobby
+Organize a drawer,10,2025-04-17,low,0.5,household
+Vacuum one room,15,2025-04-21,medium,0.6,household
+Sit and breathe deeply for a minute,5,2025-04-06,medium,0.9,health
+Try a simple origami,14,2025-04-11,medium,0.7,hobby
+Try a brain teaser,9,2025-04-12,low,0.5,education
+Read a short article,17,2025-04-11,medium,0.7,education
+Go for a short walk,12,2025-04-15,high,1.0,health
+Watch a short educational video,12,2025-04-22,low,0.6,education
+Do 20 jumping jacks,6,2025-04-03,high,1.0,health
+Write a short journal entry,11,2025-04-06,medium,0.8,personal
+Organize your wallet or bag,16,2025-04-17,high,1.0,personal
+Write a short poem or joke,16,2025-04-22,medium,0.6,hobby
+Try a simple origami,12,2025-04-03,low,0.5,hobby
+Vacuum one room,18,2025-04-14,high,1.0,household
+Wipe down the dining table,10,2025-04-20,high,1.0,household
+Organize a drawer,14,2025-04-03,medium,0.7,household
+Stretch your arms and legs,9,2025-04-22,medium,0.8,health
+Change the trash bag,5,2025-04-17,medium,1.0,household
+Try a brain teaser,10,2025-04-03,medium,0.7,education
+Take a short break outside,15,2025-04-21,medium,0.6,personal
+Solve a quick puzzle,13,2025-04-08,high,1.0,education
+Vacuum one room,13,2025-04-05,medium,0.7,household
+Wipe kitchen counters,8,2025-04-09,low,0.8,household
+Check your posture,4,2025-04-06,medium,0.5,health
+Write a short poem or joke,20,2025-04-09,medium,0.6,hobby
+Try a brain teaser,5,2025-04-14,high,0.7,education
+Organize your wallet or bag,14,2025-04-11,medium,0.8,personal
+Wipe kitchen counters,9,2025-04-07,medium,1.0,household
+Watch a short educational video,7,2025-04-13,medium,0.7,education
+Read a short article,11,2025-04-16,low,0.5,education
+Eat a piece of fruit,7,2025-04-14,low,0.7,health
+Write down a fun fact,6,2025-04-04,high,0.9,education
+Write down three things you're grateful for,10,2025-04-10,medium,1.0,personal
+Stretch your arms and legs,8,2025-04-17,medium,0.7,health
+Try a simple origami,15,2025-04-07,medium,0.6,hobby
+Go for a short walk,19,2025-04-20,medium,0.6,health
+Try a brain teaser,14,2025-04-05,low,0.5,education
+Write down three things you're grateful for,7,2025-04-06,low,0.8,personal
+Watch a short educational video,15,2025-04-15,high,0.9,education
+Sort laundry,11,2025-04-13,low,0.5,household
+Go for a short walk,13,2025-04-05,high,0.9,health
+Take a creative photo,14,2025-04-10,medium,0.8,hobby
+Try doodling something new,13,2025-04-12,high,0.8,hobby
+Wipe down mirrors,8,2025-04-13,medium,0.7,household
+Sit and breathe deeply for a minute,3,2025-04-15,high,1.0,health
+Take a creative photo,10,2025-04-16,medium,0.8,hobby
+Change bed sheets,28,2025-04-17,low,0.8,household
+Look up a word in the dictionary,8,2025-04-02,medium,0.8,education
+Check your posture,3,2025-04-18,medium,0.5,health
+Wipe down mirrors,5,2025-04-12,medium,0.7,household
+Wipe down mirrors,7,2025-04-07,low,0.6,household
+Read a short article,20,2025-04-07,medium,0.7,education
+Eat a piece of fruit,9,2025-04-12,high,1.0,health
+Hum or sing a song you like,10,2025-04-19,medium,0.6,hobby
+Go for a short walk,14,2025-04-21,high,0.9,health
+Check your posture,5,2025-04-17,medium,0.6,health
+Try a simple origami,13,2025-04-15,medium,0.7,hobby
+Sort laundry,19,2025-04-12,low,0.5,household
+Sweep the porch,18,2025-04-21,medium,0.7,household
+Send a text to a loved one,9,2025-04-17,medium,1.0,personal
+Check your posture,2,2025-04-21,low,0.5,health
+Look at the sky and relax,5,2025-04-16,high,0.7,personal
+Sweep the porch,19,2025-04-16,medium,0.6,household
+Do 20 jumping jacks,5,2025-04-15,low,0.6,health
+Take out recycling,6,2025-04-14,medium,1.0,household
+Write a short poem or joke,14,2025-04-05,medium,0.5,hobby
+Look up a word in the dictionary,7,2025-04-21,medium,0.8,education
+Write down three things you're grateful for,5,2025-04-18,medium,0.9,personal
+Sort laundry,13,2025-04-19,high,0.9,household
+Hum or sing a song you like,6,2025-04-19,medium,0.6,hobby
+Try a simple origami,10,2025-04-21,high,0.7,hobby
+Watch a short educational video,9,2025-04-08,high,0.9,education
+Go for a short walk,16,2025-04-18,low,0.6,health
+Do 20 jumping jacks,7,2025-04-16,medium,0.7,health
+Write down a fun fact,7,2025-04-13,low,0.4,education
+Do 20 jumping jacks,8,2025-04-04,low,0.6,health
+Solve a quick puzzle,12,2025-04-07,medium,0.7,education
+Send a text to a loved one,6,2025-04-17,low,0.8,personal
+Write down three things you're grateful for,8,2025-04-03,low,0.7,personal
+Write down three things you're grateful for,6,2025-04-12,medium,0.9,personal
+Eat a piece of fruit,5,2025-04-03,low,0.7,health
+Look at the sky and relax,7,2025-04-07,low,0.4,personal
+Read a short article,18,2025-04-20,high,1.0,education
+Send a text to a loved one,5,2025-04-10,medium,0.8,personal
+Take out recycling,10,2025-04-15,high,1.0,household
+Write down a fun fact,8,2025-04-11,medium,0.7,education
+Sort laundry,14,2025-04-10,medium,0.6,household
+Write a short journal entry,13,2025-04-06,high,0.9,personal
+Write a short poem or joke,12,2025-04-22,medium,0.6,hobby
+Look at the sky and relax,8,2025-04-06,low,0.6,personal
+Write a short poem or joke,15,2025-04-06,medium,0.5,hobby
+Listen to a podcast for 5 minutes,7,2025-04-09,medium,0.8,hobby
+Look up a word in the dictionary,10,2025-04-09,medium,0.7,education
+Sweep the porch,16,2025-04-02,high,0.9,household
+Try doodling something new,15,2025-04-07,low,0.3,hobby
+Solve a quick puzzle,10,2025-04-16,medium,0.9,education
+Sit and breathe deeply for a minute,4,2025-04-10,medium,0.9,health
+Sort laundry,17,2025-04-16,high,0.7,household
+Look at the sky and relax,9,2025-04-15,medium,0.6,personal
+Solve a quick puzzle,11,2025-04-10,medium,0.8,education
+Try doodling something new,11,2025-04-20,medium,0.5,hobby
+Listen to a podcast for 5 minutes,6,2025-04-22,low,0.5,hobby
+Go for a short walk,10,2025-04-10,low,0.5,health
+Listen to a podcast for 5 minutes,9,2025-04-08,medium,0.7,hobby
+Try a simple origami,6,2025-04-08,high,0.7,hobby
+Change bed sheets,23,2025-04-19,medium,0.9,household
+Take out recycling,5,2025-04-15,medium,1.0,household
+Hum or sing a song you like,9,2025-04-20,low,0.5,hobby
+Stretch your arms and legs,7,2025-04-07,high,0.9,health
+Eat a piece of fruit,8,2025-04-22,high,1.0,health
+Listen to a podcast for 5 minutes,5,2025-04-09,low,0.5,hobby
+Take a short break outside,10,2025-04-19,low,0.5,personal
+Try a brain teaser,11,2025-04-12,low,0.5,education
+Read a short article,14,2025-04-03,high,0.8,education
+Write a short journal entry,15,2025-04-15,high,0.9,personal
+Try a simple origami,7,2025-04-08,low,0.4,hobby
+Go for a short walk,15,2025-04-22,high,0.9,health
+Do 20 jumping jacks,10,2025-04-02,low,0.6,health
+Check your posture,1,2025-04-21,high,0.7,health
+Sit and breathe deeply for a minute,1,2025-04-17,medium,1.0,health
+Write down a fun fact,10,2025-04-08,low,0.5,education
+Take out recycling,8,2025-04-13,medium,1.0,household
+Send a text to a loved one,10,2025-04-20,medium,0.9,personal
+Write down a fun fact,9,2025-04-11,medium,0.7,education
+Organize your wallet or bag,13,2025-04-02,high,1.0,personal
+Hum or sing a song you like,10,2025-04-03,medium,0.6,hobby
+Take a short break outside,15,2025-04-06,high,1.0,personal
+Read a short article,14,2025-04-16,medium,0.8,education
+Send a text to a loved one,5,2025-04-13,medium,0.9,personal
+Sit and breathe deeply for a minute,4,2025-04-02,medium,1.0,health
+Listen to a podcast for 5 minutes,9,2025-04-18,medium,0.7,hobby
+Write down three things you're grateful for,5,2025-04-17,low,0.7,personal
+Eat a piece of fruit,10,2025-04-07,medium,0.8,health
+Look at the sky and relax,5,2025-04-11,medium,0.6,personal
+Check your posture,4,2025-04-11,low,0.4,health
+Write down a fun fact,10,2025-04-09,medium,0.6,education
+Do 20 jumping jacks,9,2025-04-21,medium,0.8,health
+Go for a short walk,20,2025-04-18,medium,0.7,health
+Watch a short educational video,12,2025-04-17,medium,0.7,education
+Sort laundry,19,2025-04-02,high,0.7,household
+Send a text to a loved one,10,2025-04-08,medium,1.0,personal
+Watch a short educational video,14,2025-04-05,low,0.5,education
+Try a brain teaser,14,2025-04-20,high,0.7,education
+Check your posture,3,2025-04-15,medium,0.5,health
+Stretch your arms and legs,5,2025-04-09,low,0.6,health
+Solve a quick puzzle,10,2025-04-03,medium,0.9,education
+Solve a quick puzzle,13,2025-04-04,low,0.6,education
+Wipe down mirrors,9,2025-04-22,medium,0.8,household
+Take out recycling,8,2025-04-18,low,0.8,household
+Take out recycling,10,2025-04-20,medium,1.0,household
+Hum or sing a song you like,9,2025-04-18,medium,0.6,hobby
+Write a short poem or joke,19,2025-04-07,medium,0.5,hobby
+Write a short poem or joke,13,2025-04-15,low,0.4,hobby
+Write a short journal entry,5,2025-04-14,medium,0.7,personal
+Send a text to a loved one,9,2025-04-11,medium,0.9,personal
+Try doodling something new,13,2025-04-15,medium,0.5,hobby
+Write down a fun fact,6,2025-04-21,low,0.4,education
+Go for a short walk,11,2025-04-06,high,0.9,health
+Try doodling something new,15,2025-04-19,low,0.4,hobby
+Look at the sky and relax,9,2025-04-13,low,0.5,personal
+Eat a piece of fruit,9,2025-04-12,medium,0.9,health
+Look up a word in the dictionary,8,2025-04-15,medium,0.8,education
+Write down three things you're grateful for,8,2025-04-10,medium,0.9,personal
+Sit and breathe deeply for a minute,3,2025-04-11,medium,1.0,health
+Try a simple origami,7,2025-04-06,medium,0.5,hobby
+Organize your wallet or bag,11,2025-04-07,low,0.6,personal
+Try a brain teaser,13,2025-04-16,low,0.6,education
+Sweep the porch,15,2025-04-22,low,0.6,household
+Take a short break outside,12,2025-04-02,low,0.5,personal
+Solve a quick puzzle,11,2025-04-20,medium,0.9,education
+Organize your wallet or bag,12,2025-04-06,low,0.6,personal
+Solve a quick puzzle,12,2025-04-16,medium,0.8,education
+Dust the shelves,11,2025-04-03,medium,0.8,household
+Stretch your arms and legs,10,2025-04-07,high,0.8,health
+Organize your wallet or bag,19,2025-04-05,low,0.7,personal
+Organize your wallet or bag,18,2025-04-22,medium,0.9,personal
+Try a brain teaser,6,2025-04-11,medium,0.6,education
+Take a creative photo,13,2025-04-13,high,1.0,hobby
+Go for a short walk,15,2025-04-22,medium,0.6,health
+Take a creative photo,10,2025-04-04,high,0.9,hobby
+Listen to a podcast for 5 minutes,10,2025-04-21,medium,0.6,hobby
+Watch a short educational video,10,2025-04-02,medium,0.7,education
+Check your posture,1,2025-04-02,medium,0.6,health
+Eat a piece of fruit,7,2025-04-20,low,0.7,health
+Try doodling something new,5,2025-04-15,high,0.8,hobby
+Try a simple origami,6,2025-04-18,medium,0.7,hobby
+Organize your wallet or bag,15,2025-04-16,high,1.0,personal
+Look at the sky and relax,8,2025-04-05,medium,0.6,personal
+Write down a fun fact,7,2025-04-10,low,0.5,education
+Look up a word in the dictionary,6,2025-04-04,medium,0.7,education
+Read a short article,16,2025-04-06,medium,0.6,education
+Stretch your arms and legs,9,2025-04-05,medium,0.6,health
+Read a short article,17,2025-04-10,medium,0.6,education
+Write a short poem or joke,20,2025-04-14,low,0.5,hobby
+Wipe down mirrors,5,2025-04-06,medium,0.6,household
+Try a brain teaser,12,2025-04-11,low,0.4,education
+Try a simple origami,12,2025-04-20,medium,0.6,hobby
+Stretch your arms and legs,7,2025-04-02,medium,0.6,health
+Take a creative photo,14,2025-04-12,low,0.5,hobby
+Hum or sing a song you like,6,2025-04-05,medium,0.5,hobby
+Watch a short educational video,8,2025-04-06,low,0.6,education
+Try a brain teaser,5,2025-04-07,low,0.4,education
+Check your posture,5,2025-04-05,low,0.5,health
+Sweep the porch,20,2025-04-10,high,1.0,household
+Sit and breathe deeply for a minute,5,2025-04-12,high,1.0,health
+Organize your wallet or bag,17,2025-04-07,medium,0.8,personal
+Try a simple origami,14,2025-04-16,medium,0.5,hobby
+Origami,15,2025-04-12,low,0.4,hobby
+Journal,14,2025-04-18,medium,0.8,personal
+Walk,13,2025-04-18,medium,0.6,health
+Organize,12,2025-04-17,high,1.0,personal
+Read,10,2025-04-05,medium,0.7,education
+Listen,8,2025-04-10,medium,0.7,hobby
+Origami,11,2025-04-20,medium,0.7,hobby
+Organize,36,2025-04-13,high,0.9,household
+Breathe,2,2025-04-15,high,1.0,health
+Solve,13,2025-04-15,low,0.6,education
+Walk,18,2025-04-13,low,0.6,health
+Mop,19,2025-04-21,high,0.9,household
+Watch,19,2025-04-22,high,0.9,education
+Watch,14,2025-04-22,low,0.6,education
+Origami,12,2025-04-13,high,0.7,hobby
+Breathe,1,2025-04-20,medium,0.9,health
+Origami,7,2025-04-11,medium,0.5,hobby
+Read,5,2025-04-21,high,0.8,education
+Clean,21,2025-04-11,medium,0.8,household
+Sing,5,2025-04-11,low,0.5,hobby
+Write,12,2025-04-14,high,0.9,hobby
+Organize,15,2025-04-10,medium,0.8,personal
+Learn,12,2025-04-18,low,0.6,education
+Gratitude,5,2025-04-08,low,0.8,personal
+Photo,14,2025-04-20,medium,0.7,hobby
+Sing,7,2025-04-11,medium,0.6,hobby
+Text,10,2025-04-10,medium,0.9,personal
+Relax,10,2025-04-05,low,0.5,personal
+Write,20,2025-04-18,medium,0.6,hobby
+Watch,15,2025-04-04,high,1.0,education
+Gratitude,9,2025-04-18,low,0.8,personal
+Breathe,5,2025-04-06,medium,0.9,health
+Read,7,2025-04-10,low,0.6,education
+Watch,18,2025-04-21,medium,0.8,education
+Organize,35,2025-04-13,low,0.5,household
+Solve,15,2025-04-03,medium,0.8,education
+Jump,6,2025-04-20,medium,0.8,health
+Wipe,11,2025-04-02,medium,0.8,household
+Journal,13,2025-04-18,medium,0.8,personal
+Origami,10,2025-04-10,medium,0.5,hobby
+Puzzle,11,2025-04-04,high,0.8,education
+Eat,9,2025-04-12,low,0.7,health
+Puzzle,14,2025-04-07,low,0.4,education
+Clean,38,2025-04-21,medium,0.7,household
+Listen,9,2025-04-09,low,0.5,hobby
+Wipe,12,2025-04-20,low,0.8,household
+Eat,10,2025-04-10,medium,0.8,health
+Wipe,15,2025-04-17,medium,0.8,household
+Write,10,2025-04-10,medium,0.6,hobby
+Puzzle,9,2025-04-03,medium,0.6,education
+Organize,33,2025-04-04,high,1.0,household
+Sing,6,2025-04-16,low,0.5,hobby
+Wipe,10,2025-04-11,medium,1.0,household
+Write,7,2025-04-02,low,0.5,education
+Listen,10,2025-04-14,high,1.0,hobby
+Relax,5,2025-04-08,medium,0.6,personal
+Jump,10,2025-04-15,medium,0.8,health
+Solve,11,2025-04-03,medium,0.8,education
+Journal,9,2025-04-11,low,0.6,personal
+Write,8,2025-04-17,low,0.5,education
+Stretch,8,2025-04-12,medium,0.7,health
+Vacuum,27,2025-04-07,low,0.7,household
+Eat,6,2025-04-05,medium,0.9,health
+Clean,28,2025-04-13,low,0.5,household
+Vacuum,28,2025-04-09,high,1.0,household
+Watch,11,2025-04-20,medium,0.7,education
+Posture,2,2025-04-14,medium,0.6,health
+Read,9,2025-04-09,medium,0.6,education
+Stretch,5,2025-04-09,medium,0.7,health
+Eat,7,2025-04-11,high,1.0,health
+Doodle,10,2025-04-14,medium,0.6,hobby
+Posture,3,2025-04-10,medium,0.6,health
+Posture,4,2025-04-18,low,0.4,health
+Breathe,3,2025-04-04,high,1.0,health
+Listen,6,2025-04-08,high,1.0,hobby
+Vacuum,30,2025-04-13,high,1.0,household
+Review,10,2025-04-16,medium,0.8,education
+Clean,36,2025-04-03,low,0.5,household
+Listen,9,2025-04-20,medium,0.7,hobby
+Organize,18,2025-04-08,high,1.0,personal
+Organize,15,2025-04-21,high,0.9,personal
+Doodle,5,2025-04-19,medium,0.5,hobby
+Organize,11,2025-04-09,medium,0.8,personal
+Mop,20,2025-04-11,low,0.7,household
+Journal,8,2025-04-11,low,0.5,personal
+Eat,9,2025-04-10,low,0.8,health
+Eat,6,2025-04-14,medium,0.8,health
+Clean,28,2025-04-11,medium,0.7,household
+Wipe,14,2025-04-12,high,1.0,household
+Learn,12,2025-04-21,low,0.6,education
+Write,8,2025-04-21,low,0.4,education
+Learn,5,2025-04-02,high,0.9,education
+Listen,5,2025-04-12,medium,0.8,hobby
+Relax,6,2025-04-22,high,0.7,personal
+Text,10,2025-04-17,medium,0.8,personal
+Gratitude,9,2025-04-04,medium,1.0,personal
+Trash,6,2025-04-12,medium,0.9,household
+Learn,15,2025-04-13,medium,0.6,education
+Photo,10,2025-04-14,high,0.8,hobby
+Organize,19,2025-04-06,medium,0.7,personal
+Write,7,2025-04-19,low,0.4,education
+Trash,5,2025-04-14,low,0.8,household
+Write,6,2025-04-06,low,0.4,education
+Posture,3,2025-04-06,low,0.5,health
+Gratitude,7,2025-04-04,medium,1.0,personal
+Trash,10,2025-04-10,low,0.7,household
+Stretch,5,2025-04-12,medium,0.7,health
+Text,6,2025-04-21,high,1.0,personal
+Learn,13,2025-04-08,medium,0.6,education
+Write,5,2025-04-15,medium,0.5,education
+Journal,9,2025-04-02,high,0.9,personal
+Origami,8,2025-04-03,medium,0.7,hobby
+Laundry,5,2025-04-08,low,0.8,household
+Learn,9,2025-04-10,low,0.6,education
+Organize,10,2025-04-05,medium,0.8,personal
+Read,7,2025-04-06,low,0.6,education
+Jump,8,2025-04-21,medium,0.9,health
+Organize,20,2025-04-20,high,1.0,personal
+Read,9,2025-04-05,high,0.9,education
+Walk,15,2025-04-05,low,0.5,health
+Stretch,9,2025-04-14,medium,0.7,health
+Sing,8,2025-04-14,medium,0.7,hobby
+Doodle,15,2025-04-22,high,0.6,hobby
+Solve,11,2025-04-18,low,0.7,education
+Posture,4,2025-04-14,medium,0.7,health
+Stretch,7,2025-04-02,low,0.6,health
+Listen,7,2025-04-11,low,0.6,hobby
+Review,6,2025-04-04,low,0.7,education
+Origami,9,2025-04-13,medium,0.7,hobby
+Break,12,2025-04-17,medium,0.7,personal
+Solve,15,2025-04-16,high,1.0,education
+Eat,7,2025-04-22,high,1.0,health
+Photo,13,2025-04-11,low,0.5,hobby
+Wipe,13,2025-04-20,high,1.0,household
+Mop,27,2025-04-17,medium,0.9,household
+Posture,2,2025-04-17,high,0.7,health
+Jump,9,2025-04-20,medium,0.8,health
+Sing,10,2025-04-10,low,0.4,hobby
+Journal,14,2025-04-19,low,0.6,personal
+Learn,10,2025-04-10,medium,0.8,education
+Jump,7,2025-04-19,medium,0.8,health
+Solve,12,2025-04-19,high,1.0,education
+Walk,10,2025-04-18,medium,0.7,health
+Origami,12,2025-04-13,low,0.4,hobby
+Review,5,2025-04-13,medium,0.8,education
+Doodle,7,2025-04-22,low,0.4,hobby
+Laundry,1,2025-04-12,medium,0.9,household
+Stretch,10,2025-04-13,medium,0.7,health
+Read,5,2025-04-20,medium,0.6,education
+Organize,14,2025-04-07,medium,0.8,personal
+Review,9,2025-04-16,medium,1.0,education
+Photo,15,2025-04-09,high,0.9,hobby
+Learn,8,2025-04-05,low,0.6,education
+Walk,16,2025-04-10,low,0.5,health
+Doodle,13,2025-04-22,low,0.3,hobby
+Sing,6,2025-04-18,low,0.5,hobby
+Origami,13,2025-04-13,medium,0.7,hobby
+Organize,45,2025-04-22,medium,0.6,household
+Photo,14,2025-04-16,low,0.6,hobby
+Posture,3,2025-04-02,medium,0.7,health
+Origami,10,2025-04-02,high,0.7,hobby
+Walk,15,2025-04-02,medium,0.7,health
+Mop,28,2025-04-19,medium,0.9,household
+Journal,15,2025-04-16,low,0.5,personal
+Mop,16,2025-04-22,low,0.6,household
+Trash,8,2025-04-07,high,1.0,household
+Write,15,2025-04-11,medium,0.7,hobby
+Sing,7,2025-04-04,high,0.8,hobby
+Doodle,9,2025-04-03,high,0.6,hobby
+Wipe,11,2025-04-05,high,1.0,household
+Organize,14,2025-04-20,high,1.0,personal
+Doodle,11,2025-04-14,medium,0.5,hobby
+Break,15,2025-04-19,high,1.0,personal
+Laundry,4,2025-04-19,medium,1.0,household
+Photo,11,2025-04-10,low,0.5,hobby
+Vacuum,29,2025-04-21,medium,0.8,household
+Text,10,2025-04-19,medium,0.9,personal
+Vacuum,26,2025-04-18,medium,0.8,household
+Sing,9,2025-04-03,medium,0.6,hobby
+Relax,9,2025-04-21,medium,0.6,personal
+Wipe,13,2025-04-03,low,0.7,household
+Text,6,2025-04-10,low,0.7,personal
+Journal,10,2025-04-12,low,0.6,personal
+Origami,12,2025-04-10,medium,0.6,hobby
+Listen,10,2025-04-12,low,0.6,hobby
+Break,14,2025-04-22,low,0.6,personal
+Organize,39,2025-04-17,low,0.6,household
+Stretch,7,2025-04-17,low,0.6,health
+Jump,5,2025-04-12,low,0.7,health
+Write,10,2025-04-14,low,0.5,hobby
+Write,19,2025-04-09,medium,0.6,hobby
+Clean,40,2025-04-09,medium,0.7,household
+Walk,12,2025-04-14,high,1.0,health
+Relax,5,2025-04-18,low,0.5,personal
+Listen,8,2025-04-22,medium,0.6,hobby
+Photo,15,2025-04-04,high,0.9,hobby
+Walk,14,2025-04-18,low,0.5,health
+Eat,8,2025-04-06,low,0.8,health
+Organize,15,2025-04-17,medium,0.8,personal
+Laundry,2,2025-04-13,low,0.8,household
+Stretch,6,2025-04-09,high,1.0,health
+Walk,11,2025-04-03,high,0.9,health
+Relax,7,2025-04-06,low,0.5,personal
+Learn,9,2025-04-11,low,0.5,education
+Listen,6,2025-04-08,low,0.5,hobby
+Vacuum,20,2025-04-15,low,0.6,household
+Learn,7,2025-04-12,medium,0.8,education
+Laundry,3,2025-04-07,high,1.0,household
+Review,10,2025-04-12,low,0.8,education
+Read,10,2025-04-07,medium,0.7,education
+Eat,5,2025-04-15,low,0.7,health
+Journal,9,2025-04-20,high,0.9,personal
+Learn,6,2025-04-10,low,0.6,education
+Jump,10,2025-04-22,medium,0.9,health
+Write,10,2025-04-21,medium,0.6,education
+Text,9,2025-04-08,medium,1.0,personal
+Learn,10,2025-04-14,high,0.8,education
+Learn,8,2025-04-18,medium,0.8,education
+Organize,35,2025-04-17,medium,0.7,household
+Sing,5,2025-04-11,medium,0.6,hobby
+Text,8,2025-04-03,low,0.7,personal
+Listen,5,2025-04-06,medium,0.7,hobby
+Eat,6,2025-04-04,low,0.7,health
+Photo,13,2025-04-18,medium,0.7,hobby
+Relax,6,2025-04-19,medium,0.5,personal
+Organize,18,2025-04-17,medium,0.8,personal
+Write,5,2025-04-02,medium,0.6,education
+Organize,16,2025-04-11,high,1.0,personal
+Journal,14,2025-04-21,low,0.5,personal
+Mop,25,2025-04-13,medium,0.7,household
+Sing,10,2025-04-13,high,0.7,hobby
+Jump,7,2025-04-14,medium,0.8,health
+Jump,6,2025-04-11,low,0.6,health
+Learn,14,2025-04-03,low,0.5,education
+Write,9,2025-04-20,medium,0.7,education
+Read,7,2025-04-14,low,0.6,education
+Review,7,2025-04-08,medium,0.9,education
+Write,7,2025-04-19,medium,0.5,education
+Posture,1,2025-04-20,low,0.5,health
+Eat,10,2025-04-07,low,0.7,health
+Doodle,14,2025-04-08,medium,0.4,hobby
+Write,13,2025-04-16,medium,0.6,hobby
+Review,5,2025-04-16,medium,0.9,education
+Gratitude,8,2025-04-13,low,0.8,personal
+Stretch,5,2025-04-12,medium,0.8,health
+Clean,27,2025-04-17,medium,0.6,household
+Posture,2,2025-04-19,high,0.8,health
+Review,9,2025-04-12,medium,1.0,education
+Clean,23,2025-04-19,medium,0.8,household
+Review,8,2025-04-06,low,0.7,education
+Stretch,8,2025-04-13,medium,0.6,health
+Organize,31,2025-04-16,medium,0.7,household
+Jump,9,2025-04-03,low,0.7,health
+Read,9,2025-04-22,medium,0.7,education
+Origami,7,2025-04-06,medium,0.7,hobby
+Walk,17,2025-04-02,medium,0.8,health
+Posture,4,2025-04-20,medium,0.6,health
+Write,6,2025-04-18,medium,0.6,education
+Posture,5,2025-04-04,medium,0.6,health
+Walk,10,2025-04-17,high,0.9,health
+Learn,13,2025-04-13,low,0.6,education
+Eat,7,2025-04-05,low,0.7,health
+Stretch,10,2025-04-22,low,0.5,health
+Eat,9,2025-04-18,low,0.7,health
+Journal,6,2025-04-21,high,1.0,personal
+Text,5,2025-04-21,medium,0.9,personal
+Text,7,2025-04-10,high,1.0,personal
+Wipe,15,2025-04-10,low,0.7,household
+Trash,9,2025-04-17,medium,1.0,household
+Read,5,2025-04-11,high,0.8,education
+Learn,12,2025-04-19,low,0.6,education
+Doodle,10,2025-04-06,high,0.7,hobby
+Learn,11,2025-04-20,medium,0.8,education
+Stretch,9,2025-04-14,medium,0.6,health
+Read,6,2025-04-13,medium,0.7,education
+Jump,8,2025-04-06,low,0.6,health
+Trash,5,2025-04-03,medium,0.9,household
+Organize,37,2025-04-12,medium,0.7,household
+Learn,5,2025-04-11,medium,0.6,education
+Vacuum,23,2025-04-07,medium,0.8,household
+Wipe,14,2025-04-10,medium,0.8,household
+Gratitude,7,2025-04-22,medium,1.0,personal
+Origami,11,2025-04-21,medium,0.5,hobby
+Walk,16,2025-04-03,low,0.6,health
+Gratitude,10,2025-04-06,medium,0.9,personal
+Laundry,1,2025-04-05,medium,1.0,household
+Learn,13,2025-04-07,medium,0.7,education
+Text,7,2025-04-08,medium,1.0,personal
+Break,12,2025-04-07,medium,0.6,personal
+Walk,14,2025-04-11,low,0.5,health
+Listen,9,2025-04-21,medium,0.8,hobby
+Write,17,2025-04-09,low,0.5,hobby
+Break,13,2025-04-04,medium,0.8,personal
+Trash,9,2025-04-03,medium,0.9,household
+Walk,17,2025-04-03,high,0.9,health
+Learn,11,2025-04-18,medium,0.8,education
+Clean,39,2025-04-12,low,0.5,household
+Write,14,2025-04-09,medium,0.5,hobby
+Stretch,10,2025-04-15,medium,0.7,health
+Clean,20,2025-04-15,high,1.0,household
+Vacuum,20,2025-04-12,low,0.6,household
+Clean,33,2025-04-22,high,1.0,household
+Walk,16,2025-04-04,medium,0.7,health
+Clean,38,2025-04-06,medium,0.6,household
+Doodle,11,2025-04-10,high,0.6,hobby
+Wipe,11,2025-04-03,low,0.7,household
+Write,12,2025-04-21,low,0.5,hobby
+Write,20,2025-04-19,high,0.7,hobby
+Listen,8,2025-04-04,medium,0.7,hobby
+Mop,20,2025-04-10,low,0.7,household
+Learn,10,2025-04-22,medium,0.7,education
+Vacuum,21,2025-04-17,medium,0.9,household
+Trash,7,2025-04-16,low,0.7,household
+Posture,2,2025-04-20,medium,0.6,health
+Break,14,2025-04-02,low,0.6,personal
+Organize,12,2025-04-03,medium,0.8,personal
+Vacuum,27,2025-04-02,medium,0.8,household
+Read,8,2025-04-18,medium,0.6,education
+Review,7,2025-04-20,medium,0.8,education
+Learn,7,2025-04-05,medium,0.7,education
+Organize,44,2025-04-12,medium,0.6,household
+Text,9,2025-04-12,high,1.0,personal
+Listen,6,2025-04-19,medium,0.7,hobby
+Mop,30,2025-04-11,medium,0.8,household
+Laundry,2,2025-04-12,high,1.0,household
+Eat,5,2025-04-09,high,1.0,health
+Posture,4,2025-04-09,medium,0.6,health
+Doodle,10,2025-04-04,low,0.5,hobby
+Wipe,12,2025-04-22,low,0.8,household
+Relax,7,2025-04-06,low,0.5,personal
+Jump,5,2025-04-11,low,0.6,health
+Relax,6,2025-04-22,medium,0.6,personal
+Eat,8,2025-04-19,medium,1.0,health
+Write,7,2025-04-12,medium,0.5,education
+Stretch,9,2025-04-14,medium,0.6,health
+Organize,39,2025-04-22,medium,0.7,household
+Learn,8,2025-04-04,high,0.8,education
+Read,7,2025-04-04,low,0.6,education
+Clean,22,2025-04-15,low,0.5,household
+Relax,8,2025-04-02,medium,0.7,personal
+Write,6,2025-04-14,low,0.5,education
+Doodle,5,2025-04-15,medium,0.4,hobby
+Listen,7,2025-04-02,medium,0.6,hobby
+Posture,3,2025-04-16,medium,0.5,health
+Origami,11,2025-04-17,high,0.8,hobby
+Photo,11,2025-04-08,medium,0.6,hobby
+Doodle,14,2025-04-21,medium,0.5,hobby
+Stretch,7,2025-04-07,medium,0.8,health
+Vacuum,26,2025-04-17,low,0.7,household
+Walk,15,2025-04-21,medium,0.6,health
+Organize,37,2025-04-16,low,0.6,household
+Journal,9,2025-04-03,high,0.8,personal
+Doodle,15,2025-04-22,medium,0.4,hobby
+Wipe,15,2025-04-22,medium,0.8,household
+Write,18,2025-04-04,medium,0.7,hobby
+Origami,5,2025-04-08,medium,0.6,hobby
+Mop,27,2025-04-09,high,1.0,household
+Review,8,2025-04-11,medium,1.0,education
+Clean,34,2025-04-05,high,0.9,household
+Organize,18,2025-04-11,low,0.7,personal
+Mop,25,2025-04-02,medium,0.9,household
+Write,15,2025-04-09,high,0.7,hobby
+Organize,40,2025-04-20,high,0.8,household
+Review,9,2025-04-06,high,1.0,education
+Read,10,2025-04-13,low,0.6,education
+Organize,41,2025-04-03,high,0.8,household
+Organize,11,2025-04-22,medium,0.9,personal
+Eat,7,2025-04-10,medium,0.9,health
+Journal,7,2025-04-04,medium,0.7,personal
+Photo,12,2025-04-17,high,1.0,hobby
+Laundry,5,2025-04-10,high,1.0,household
+Posture,5,2025-04-06,medium,0.5,health
+Learn,5,2025-04-10,low,0.6,education
+Mop,28,2025-04-07,high,1.0,household
+Jump,10,2025-04-18,medium,0.9,health
+Organize,15,2025-04-12,high,0.9,personal
+Text,6,2025-04-17,medium,0.8,personal
+Walk,18,2025-04-20,low,0.6,health
+Walk,12,2025-04-20,high,1.0,health
+Laundry,3,2025-04-21,high,1.0,household
+Read,9,2025-04-10,medium,0.6,education
+Walk,10,2025-04-18,high,0.9,health
+Doodle,13,2025-04-21,high,0.7,hobby
+Wipe,14,2025-04-06,medium,0.9,household
+Listen,10,2025-04-09,medium,0.7,hobby
+Origami,13,2025-04-19,high,0.8,hobby
+Clean,26,2025-04-19,medium,0.7,household
+Review,5,2025-04-08,medium,0.9,education
+Write,9,2025-04-05,medium,0.6,education
+Wipe,13,2025-04-07,medium,0.8,household
+Clean,31,2025-04-05,high,0.9,household
+Eat,10,2025-04-15,high,1.0,health
+Vacuum,25,2025-04-08,low,0.7,household
+Relax,10,2025-04-17,low,0.5,personal
+Stretch,6,2025-04-04,high,1.0,health
+Photo,10,2025-04-11,medium,0.7,hobby
+Text,10,2025-04-05,low,0.7,personal
+Text,8,2025-04-09,medium,0.9,personal
+Organize,10,2025-04-13,high,1.0,personal
+Organize,13,2025-04-21,low,0.7,personal
+Trash,8,2025-04-11,medium,1.0,household
+Text,5,2025-04-18,low,0.8,personal
+Doodle,6,2025-04-13,medium,0.5,hobby
+Read,6,2025-04-18,medium,0.8,education
+Sing,8,2025-04-06,low,0.4,hobby
+Review,6,2025-04-16,low,0.8,education
+Write,16,2025-04-02,low,0.4,hobby
+Break,11,2025-04-14,medium,0.8,personal
+Learn,9,2025-04-03,high,0.9,education
+Review,10,2025-04-09,medium,0.9,education
+Listen,5,2025-04-06,high,0.8,hobby
+Write,5,2025-04-22,medium,0.6,education
+Write,8,2025-04-13,medium,0.6,education
+Posture,1,2025-04-07,medium,0.5,health
+Photo,14,2025-04-02,high,0.8,hobby
+Break,15,2025-04-17,medium,0.7,personal
+Sing,6,2025-04-15,medium,0.6,hobby
+Organize,17,2025-04-17,low,0.7,personal
+Write,11,2025-04-05,medium,0.7,hobby
+Photo,15,2025-04-19,high,1.0,hobby
+Walk,11,2025-04-17,medium,0.6,health
+Jump,7,2025-04-15,high,0.9,health
+Journal,5,2025-04-12,medium,0.7,personal
+Eat,9,2025-04-03,high,1.0,health
+Jump,9,2025-04-02,low,0.6,health
+Read,5,2025-04-05,medium,0.7,education
+Stretch,8,2025-04-22,low,0.6,health
+Stretch,5,2025-04-10,medium,0.7,health
+Jump,8,2025-04-15,medium,0.7,health
+Eat,6,2025-04-16,low,0.7,health
+Write,10,2025-04-16,medium,0.5,education
+Origami,10,2025-04-10,medium,0.6,hobby
+Sing,7,2025-04-20,medium,0.5,hobby
+Jump,6,2025-04-09,high,1.0,health
+Learn,12,2025-04-03,medium,0.6,education
+Clean,29,2025-04-10,medium,0.8,household
+Sing,5,2025-04-18,low,0.5,hobby
+Vacuum,28,2025-04-21,medium,0.9,household
+Relax,9,2025-04-17,high,0.7,personal
+Sing,9,2025-04-03,medium,0.6,hobby
+Journal,10,2025-04-21,low,0.6,personal
+Doodle a sketch,13,2025-04-02,low,0.4,hobby
+Reorganize closet,33,2025-04-20,low,0.6,household
+Fold Laundry,53,2025-04-08,high,0.9,household
+Watch a documentary,11,2025-04-14,high,0.9,education
+Take a short break,13,2025-04-13,medium,0.8,personal
+Fold Laundry,49,2025-04-13,medium,0.7,household
+Reorganize closet,36,2025-04-06,medium,0.7,household
+Write in a journal,8,2025-04-19,high,0.9,personal
+Take out trash,7,2025-04-22,medium,1.0,household
+Eat a healthy snack,6,2025-04-08,high,1.0,health
+Go for a walk,12,2025-04-07,low,0.5,health
+Listen to a podcast,7,2025-04-08,low,0.5,hobby
+Watch a documentary,13,2025-04-10,medium,0.8,education
+Write in a journal,13,2025-04-04,medium,0.6,personal
+Stretch muscles,10,2025-04-12,low,0.6,health
+Shop for groceries,37,2025-04-15,medium,0.9,personal
+Take out trash,9,2025-04-12,medium,0.9,household
+Write in a journal,11,2025-04-04,low,0.6,personal
+Organize a drawer,15,2025-04-21,medium,0.8,personal
+Write in a journal,6,2025-04-11,medium,0.6,personal
+Write a short story,18,2025-04-19,medium,0.6,hobby
+Doodle a sketch,10,2025-04-12,low,0.4,hobby
+Go for a walk,13,2025-04-03,low,0.5,health
+Go for a walk,20,2025-04-04,low,0.5,health
+Reorganize closet,44,2025-04-07,high,0.9,household
+Go for a walk,17,2025-04-04,medium,0.6,health
+Listen to a podcast,10,2025-04-19,low,0.5,hobby
+Sweep the floor,10,2025-04-12,high,1.0,household
+Doodle a sketch,5,2025-04-07,medium,0.6,hobby
+Vacuum carpets,29,2025-04-21,medium,0.7,household
+Fold Laundry,60,2025-04-05,medium,0.7,household
+Check posture,4,2025-04-18,medium,0.7,health
+Watch a documentary,12,2025-04-07,low,0.5,education
+Write in a journal,12,2025-04-15,high,1.0,personal
+Reorganize closet,31,2025-04-15,high,0.9,household
+Wipe down counters,12,2025-04-04,medium,0.9,household
+Wipe down counters,13,2025-04-06,medium,1.0,household
+Jump rope,6,2025-04-13,high,0.9,health
+Take a short break,12,2025-04-02,medium,0.6,personal
+Listen to a podcast,5,2025-04-08,low,0.5,hobby
+Eat a healthy snack,10,2025-04-14,low,0.7,health
+Write a gratitude note,7,2025-04-03,medium,1.0,personal
+Practice deep breathing,1,2025-04-03,low,0.7,health
+Sweep the floor,16,2025-04-21,high,1.0,household
+Jump rope,10,2025-04-16,medium,0.9,health
+Write a short story,15,2025-04-03,low,0.5,hobby
+Fold Laundry,27,2025-04-16,medium,0.6,household
+Practice deep breathing,5,2025-04-11,medium,1.0,health
+Fold Laundry,55,2025-04-04,low,0.6,household
+Write in a journal,5,2025-04-19,medium,0.7,personal
+Go for a walk,14,2025-04-07,medium,0.7,health
+Eat a healthy snack,7,2025-04-18,medium,1.0,health
+Write in a journal,10,2025-04-21,high,0.9,personal
+Doodle a sketch,15,2025-04-07,medium,0.6,hobby
+Shop for groceries,19,2025-04-07,medium,0.8,personal
+Sweep the floor,15,2025-04-06,low,0.6,household
+Take a short break,11,2025-04-13,medium,0.7,personal
+Check posture,3,2025-04-22,high,0.7,health
+Jump rope,5,2025-04-09,medium,0.8,health
+Take a photo,12,2025-04-10,medium,0.8,hobby
+Wipe down counters,11,2025-04-14,low,0.7,household
+Take a photo,11,2025-04-14,medium,0.7,hobby
+Read an article,8,2025-04-21,high,1.0,education
+Stretch muscles,8,2025-04-08,medium,0.7,health
+Fold Laundry,52,2025-04-08,medium,0.7,household
+Stretch muscles,6,2025-04-09,high,0.9,health
+Vacuum carpets,26,2025-04-09,medium,0.8,household
+Listen to calming music,7,2025-04-18,medium,0.6,personal
+Stretch muscles,5,2025-04-17,low,0.6,health
+Write a short story,11,2025-04-20,medium,0.6,hobby
+Write a short story,12,2025-04-05,medium,0.7,hobby
+Reorganize closet,38,2025-04-07,high,0.8,household
+Check posture,1,2025-04-15,medium,0.6,health
+Read an article,5,2025-04-18,medium,0.6,education
+Go for a walk,15,2025-04-19,high,0.9,health
+Organize a drawer,11,2025-04-07,medium,0.8,personal
+Go for a walk,18,2025-04-19,high,0.9,health
+Reorganize closet,45,2025-04-13,low,0.6,household
+Listen to calming music,9,2025-04-19,medium,0.7,personal
+Practice deep breathing,3,2025-04-13,medium,1.0,health
+Check posture,2,2025-04-15,high,0.7,health
+Take a photo,14,2025-04-14,low,0.5,hobby
+Watch a documentary,19,2025-04-02,low,0.6,education
+Listen to a podcast,6,2025-04-03,medium,0.7,hobby
+Eat a healthy snack,8,2025-04-05,low,0.7,health
+Go for a walk,16,2025-04-20,medium,0.7,health
+Jump rope,9,2025-04-14,low,0.7,health
+Take out trash,8,2025-04-10,low,0.8,household
+Watch a documentary,20,2025-04-20,low,0.5,education
+Write a gratitude note,10,2025-04-12,high,1.0,personal
+Write a short story,13,2025-04-03,medium,0.6,hobby
+Fold Laundry,44,2025-04-17,medium,0.6,household
+Write a gratitude note,9,2025-04-15,low,0.8,personal
+Shop for groceries,47,2025-04-21,medium,0.8,personal
+Take a short break,14,2025-04-14,medium,0.8,personal
+Take a photo,13,2025-04-22,medium,0.7,hobby
+Organize a drawer,17,2025-04-14,medium,0.7,personal
+Doodle a sketch,12,2025-04-13,high,0.6,hobby
+Write a short story,17,2025-04-21,high,0.7,hobby
+Write a gratitude note,6,2025-04-19,low,0.7,personal
+Stretch muscles,9,2025-04-19,low,0.5,health
+Read an article,7,2025-04-03,low,0.6,education
+Doodle a sketch,6,2025-04-21,low,0.4,hobby
+Write a gratitude note,8,2025-04-03,high,1.0,personal
+Vacuum carpets,25,2025-04-16,low,0.7,household
+Go for a walk,10,2025-04-02,medium,0.7,health
+Doodle a sketch,8,2025-04-12,medium,0.5,hobby
+Read an article,9,2025-04-13,low,0.6,education
+Listen to a podcast,8,2025-04-14,medium,0.8,hobby
+Take a short break,10,2025-04-07,low,0.6,personal
+Take out trash,10,2025-04-19,medium,0.9,household
+Write a gratitude note,5,2025-04-13,medium,0.9,personal
+Jump rope,8,2025-04-16,medium,0.8,health
+Watch a documentary,14,2025-04-08,high,0.9,education
+Wipe down counters,10,2025-04-04,medium,0.9,household
+Eat a healthy snack,9,2025-04-21,medium,1.0,health
+Sweep the floor,18,2025-04-02,medium,0.9,household
+Watch a documentary,17,2025-04-10,low,0.6,education
+Read an article,10,2025-04-22,medium,0.7,education
+Shop for groceries,12,2025-04-10,medium,0.8,personal
+Take a photo,15,2025-04-05,high,0.8,hobby
+Write a short story,10,2025-04-15,low,0.5,hobby
+Listen to a podcast,9,2025-04-04,high,0.9,hobby
+Take a photo,10,2025-04-18,low,0.5,hobby
+Vacuum carpets,27,2025-04-14,medium,0.7,household
+Watch a documentary,16,2025-04-04,high,1.0,education
+Doodle a sketch,9,2025-04-09,medium,0.5,hobby
+Practice deep breathing,4,2025-04-06,medium,1.0,health
+Watch a documentary,18,2025-04-09,medium,0.7,education
+Go for a walk,19,2025-04-02,medium,0.8,health
+Jump rope,7,2025-04-11,medium,0.7,health
+Write in a journal,7,2025-04-14,medium,0.7,personal
+Eat a healthy snack,5,2025-04-22,medium,1.0,health
+Check posture,5,2025-04-02,medium,0.7,health
+Read an article,6,2025-04-13,low,0.5,education
+Stretch muscles,7,2025-04-17,low,0.5,health
+Organize a drawer,14,2025-04-03,medium,0.8,personal
+Write a short story,14,2025-04-12,medium,0.7,hobby
+Watch a documentary,15,2025-04-06,high,0.9,education
+Practice deep breathing,2,2025-04-18,low,0.8,health
+Reorganize closet,35,2025-04-12,medium,0.6,household
+Watch a documentary,10,2025-04-07,medium,0.8,education
+Listen to calming music,6,2025-04-05,medium,0.6,personal
+Vacuum carpets,28,2025-04-13,medium,0.9,household
