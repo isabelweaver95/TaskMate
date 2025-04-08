@@ -16,7 +16,7 @@ CATEGORY_WEIGHTS = {
 def load_existing_data():
     """Safely load and validate existing data"""
     try:
-        df = pd.read_csv("tasks.csv")
+        df = pd.read_csv("tasks_updated.csv")
         return df[df['category'].str.lower().isin(ALLOWED_CATEGORIES)]
     except FileNotFoundError:
         return pd.DataFrame(columns=["name", "priority", "category", "duration", "urgency", "due_date"])
@@ -25,38 +25,38 @@ def generate_task(category):
     """Enhanced task generator with 10+ examples per category"""
     task_library = {
         "household": [
-            {"name": "Make bed", "duration": (5, 10), "urgency": (0.2, 0.5)},
-            {"name": "Make bed", "duration": (5, 10), "urgency": (0.2, 0.5)},
-            {"name": "Make bed", "duration": (5, 10), "urgency": (0.2, .5)},
-            {"name": "Make beds", "duration": (5, 10), "urgency": (0.2, 0.5)},
-            {"name": "Make bed", "duration": (5, 10), "urgency": (0.2, 0.5)},
-            {"name": "Make bed", "duration": (5, 10), "urgency": (0.2, 0.5)}
+            {"name": "Fold laundry", "duration": (5, 10), "urgency": (0.2, 0.5)},
+            {"name": "Fold laundry", "duration": (5, 10), "urgency": (0.2, 0.5)},
+            {"name": "Fold laundry", "duration": (5, 10), "urgency": (0.2, .5)},
+            {"name": "Dishes", "duration": (5, 10), "urgency": (0.2, 0.5)},
+            {"name": "Dishes", "duration": (5, 10), "urgency": (0.2, 0.5)},
+            {"name": "Dishes", "duration": (5, 10), "urgency": (0.2, 0.5)}
         ],
         "health": [
-            {"name": "Jump rope", "duration": (5, 10), "urgency": (0.7, 0.9)},
-            {"name": "Eat a healthy snack", "duration": (5, 10), "urgency": (0.8, 1.0)},
-            {"name": "Go for a walk", "duration": (10, 20), "urgency": (0.6, 0.8)},
-            {"name": "Practice deep breathing", "duration": (1, 5), "urgency": (0.9, 1.0)},
-            {"name": "Check posture", "duration": (1, 5), "urgency": (0.5, 0.7)},
-            {"name": "Stretch muscles", "duration": (5, 10), "urgency": (0.6, 0.8)}
+            {"name": "Workout", "duration": (15, 60), "urgency": (0.7, 0.9)},
+            {"name": "Workout", "duration": (15, 45), "urgency": (0.8, 1.0)},
+            {"name": "Go on a run", "duration": (10, 60), "urgency": (0.6, 0.8)},
+            {"name": "Workout", "duration": (10, 35), "urgency": (0.9, 1.0)},
+            {"name": "Go on a run", "duration": (10, 35), "urgency": (0.5, 0.7)},
+            {"name": "Go on a run", "duration": (15, 65), "urgency": (0.6, 0.8)}
         ],
         "education": [
-            {"name": "Read an article", "duration": (5, 10), "urgency": (0.6, 0.8)},
-            {"name": "Watch a documentary", "duration": (10, 20), "urgency": (0.6, 0.8)},
+            {"name": "Do homework", "duration": (30, 60), "urgency": (0.6, 0.8)},
+            {"name": "Do homework", "duration": (30, 60), "urgency": (0.6, 0.8)},
         ],
         "personal": [
-            {"name": "Write a gratitude note", "duration": (5, 10), "urgency": (0.9, 1.0)},
-            {"name": "Shop for groceries", "duration": (5, 60), "urgency": (0.8, 1.0)},
-            {"name": "Organize a drawer", "duration": (10, 20), "urgency": (0.7, 0.9)},
-            {"name": "Take a short break", "duration": (10, 15), "urgency": (0.6, 0.8)},
-            {"name": "Listen to calming music", "duration": (5, 10), "urgency": (0.5, 0.7)},
-            {"name": "Write in a journal", "duration": (5, 15), "urgency": (0.6, 0.8)}
+            {"name": "Watch a movie", "duration": (90, 120), "urgency": (0.1, 0.5)},
+            {"name": "Watch a movie", "duration": (90, 120), "urgency": (0.1, 0.5)},
+            {"name": "Watch a movie", "duration": (90, 120), "urgency": (0.1, 0.5)},
+            {"name": "Watch a movie", "duration": (90, 120), "urgency": (0.1, 0.5)},
+            {"name": "Watch a movie", "duration": (90, 120), "urgency": (0.1, 0.5)},
+            {"name": "Watch a movie", "duration": (90, 120), "urgency": (0.1, 0.5)}
         ],
         "hobby": [
-            {"name": "Doodle a sketch", "duration": (5, 15), "urgency": (0.4, 0.6)},
-            {"name": "Listen to a podcast", "duration": (5, 10), "urgency": (0.6, 0.8)},
-            {"name": "Write a short story", "duration": (10, 20), "urgency": (0.5, 0.7)},
-            {"name": "Take a photo", "duration": (10, 15), "urgency": (0.6, 0.8)},
+            {"name": "Draw", "duration": (5, 15), "urgency": (0.4, 0.6)},
+            {"name": "Draw", "duration": (5, 10), "urgency": (0.6, 0.8)},
+            {"name": "read", "duration": (10, 20), "urgency": (0.5, 0.7)},
+            {"name": "Read", "duration": (10, 15), "urgency": (0.6, 0.8)},
         ]
     }
 
