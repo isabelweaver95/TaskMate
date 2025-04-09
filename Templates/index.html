@@ -6,67 +6,125 @@
     <title>Daily Task Planner</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
             line-height: 1.6;
         }
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .user-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
         }
         h1 {
             color: #2c3e50;
-            text-align: center;
+            margin: 0;
+            font-size: 28px;
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .username {
+            font-weight: 600;
+            color: #3498db;
+        }
+        .logout-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .logout-btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-1px);
         }
         .form-step {
             display: none;
+            animation: fadeIn 0.5s ease;
         }
         .form-step.active {
             display: block;
         }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
         label {
             display: block;
-            margin-top: 15px;
-            font-weight: bold;
+            margin: 15px 0 5px;
+            font-weight: 600;
+            color: #2c3e50;
         }
         input, select {
             width: 100%;
-            padding: 10px;
-            margin-top: 5px;
+            padding: 12px;
+            margin-bottom: 5px;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 6px;
             box-sizing: border-box;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+        input:focus, select:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52,152,219,0.2);
         }
         button {
             background-color: #3498db;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 25px;
             margin-top: 20px;
-            border-radius: 4px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
+            transition: all 0.3s;
         }
         button:hover {
             background-color: #2980b9;
+            transform: translateY(-1px);
+        }
+        button:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
         }
         .navigation-buttons {
             display: flex;
             justify-content: space-between;
+            margin-top: 30px;
         }
         .task-item {
-            background: #f9f9f9;
-            padding: 15px;
-            margin-bottom: 10px;
+            background: #f8fafc;
+            padding: 20px;
+            margin-bottom: 15px;
             border-left: 4px solid #3498db;
-            border-radius: 4px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         .task-item h3 {
             margin-top: 0;
             color: #2c3e50;
+            font-size: 18px;
         }
         .time-display {
             font-weight: bold;
@@ -74,34 +132,98 @@
         }
         .summary {
             background: #ecf0f1;
-            padding: 15px;
-            border-radius: 4px;
-            margin-top: 20px;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 30px 0;
         }
         .error {
             color: #e74c3c;
-            padding: 10px;
+            padding: 15px;
             background: #fadbd8;
-            border-radius: 4px;
-            margin-top: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+            border-left: 4px solid #e74c3c;
+        }
+        .success {
+            color: #27ae60;
+            padding: 15px;
+            background: #d5f5e3;
+            border-radius: 6px;
+            margin: 20px 0;
+            border-left: 4px solid #27ae60;
+        }
+        .history-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .history-link:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        .task-form {
+            background: #f8fafc;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+        }
+        .task-form h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+        .progress-bar {
+            height: 6px;
+            background: #ecf0f1;
+            border-radius: 3px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background: #3498db;
+            width: 0%;
+            transition: width 0.5s ease;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Daily Task Planner</h1>
-        
+        <div class="user-header">
+            <h1>Daily Task Planner</h1>
+            {% if current_user.is_authenticated %}
+                <div class="user-info">
+                    <span class="username">{{ current_user.username }}</span>
+                    <button class="logout-btn" onclick="window.location.href='{{ url_for('logout') }}'">Logout</button>
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress" id="form-progress"></div>
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
         <!-- Step 1: Basic Info -->
         <div id="step1" class="form-step active">
             <h2>Plan Your Day</h2>
             <label for="total_tasks">Number of Tasks:</label>
-            <input type="number" id="total_tasks" name="total_tasks" min="1" max="10" required>
+            <input type="number" id="total_tasks" name="total_tasks" min="1" max="10" value="3" required>
             
             <label for="time_period">Time Available (hours):</label>
-            <input type="number" id="time_period" name="time_period" min="1" max="24" step="0.5" required>
+            <input type="number" id="time_period" name="time_period" min="1" max="24" step="0.5" value="8" required>
             
             <div class="navigation-buttons">
-                <button type="button" onclick="nextStep(1)">Next</button>
+                <button type="button" onclick="nextStep(1)">Next →</button>
             </div>
         </div>
         
@@ -113,8 +235,8 @@
             </div>
             
             <div class="navigation-buttons">
-                <button type="button" onclick="prevStep(2)">Back</button>
-                <button type="button" onclick="submitAllTasks()">Plan My Day</button>
+                <button type="button" onclick="prevStep(2)">← Back</button>
+                <button type="button" id="submit-tasks" onclick="submitAllTasks()">Plan My Day</button>
             </div>
         </div>
         
@@ -138,10 +260,12 @@
                 {% endfor %}
                 
                 <div class="navigation-buttons">
-                    <button type="button" onclick="prevStep(3)">Back</button>
+                    <button type="button" onclick="prevStep(3)">← Back</button>
                     <button type="button" onclick="resetForm()">Start Over</button>
                 </div>
             {% endif %}
+
+            <a href="{{ url_for('history') }}" class="history-link">View Task History →</a>
         </div>
 
         {% if error %}
@@ -152,6 +276,12 @@
     <script>
         let currentStep = 1;
         let totalTasks = 0;
+        
+        // Update progress bar
+        function updateProgress() {
+            const progress = document.getElementById('form-progress');
+            progress.style.width = `${(currentStep / 3) * 100}%`;
+        }
         
         function nextStep(step) {
             if (step === 1) {
@@ -166,7 +296,7 @@
                 
                 for (let i = 0; i < totalTasks; i++) {
                     taskForms.innerHTML += `
-                        <div class="task-form" style="margin-bottom: 30px;">
+                        <div class="task-form">
                             <h3>Task ${i + 1}</h3>
                             <label for="task_name_${i}">Task Name:</label>
                             <input type="text" id="task_name_${i}" name="task_name_${i}" required>
@@ -174,17 +304,17 @@
                             <label for="priority_${i}">Priority:</label>
                             <select id="priority_${i}" name="priority_${i}" required>
                                 <option value="low">Low</option>
-                                <option value="medium">Medium</option>
+                                <option value="medium" selected>Medium</option>
                                 <option value="high">High</option>
                             </select>
                             
                             <label for="category_${i}">Category:</label>
                             <select id="category_${i}" name="category_${i}" required>
-                                <option value="household">Household</option>
+                                <option value="work">Work</option>
+                                <option value="personal" selected>Personal</option>
                                 <option value="health">Health</option>
-                                <option value="education">Education</option>
-                                <option value="personal">Personal</option>
-                                <option value="hobby">Hobby</option>
+                                <option value="learning">Learning</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
                     `;
@@ -194,12 +324,14 @@
             document.getElementById(`step${currentStep}`).classList.remove('active');
             currentStep++;
             document.getElementById(`step${currentStep}`).classList.add('active');
+            updateProgress();
         }
         
         function prevStep(step) {
             document.getElementById(`step${currentStep}`).classList.remove('active');
             currentStep--;
             document.getElementById(`step${currentStep}`).classList.add('active');
+            updateProgress();
         }
         
         function resetForm() {
@@ -207,9 +339,14 @@
             currentStep = 1;
             document.getElementById(`step${currentStep}`).classList.add('active');
             document.querySelector('form').reset();
+            updateProgress();
         }
         
         function submitAllTasks() {
+            const submitBtn = document.getElementById('submit-tasks');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Planning...';
+            
             const formData = new FormData();
             formData.append('total_tasks', totalTasks);
             formData.append('time_period', document.getElementById('time_period').value);
@@ -220,7 +357,7 @@
                 formData.append(`category_${i}`, document.getElementById(`category_${i}`).value);
             }
             
-            fetch('/', {
+            fetch('{{ url_for("plan") }}', {
                 method: 'POST',
                 body: formData
             })
@@ -232,8 +369,15 @@
             .catch(error => {
                 console.error('Error:', error);
                 alert('An error occurred. Please try again.');
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Plan My Day';
             });
         }
+
+        // Initialize progress bar
+        updateProgress();
     </script>
 </body>
 </html>

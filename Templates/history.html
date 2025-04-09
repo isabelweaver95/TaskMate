@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .day-group {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .day-header {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .task-item {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        .task-item h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .time-display {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .error {
+            color: #e74c3c;
+            padding: 10px;
+            background: #fadbd8;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+        .user-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .user-info {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .logout-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="user-header">
+            <h1>Task History</h1>
+            {% if current_user.is_authenticated %}
+                <div>
+                    <span class="user-info">{{ current_user.username }}</span>
+                    <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+                </div>
+            {% endif %}
+        </div>
+        
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% else %}
+            {% if tasks %}
+                {% set current_date = None %}
+                {% for task in tasks %}
+                    {% if task['date'] != current_date %}
+                        {% if current_date is not none %}
+                            </div> <!-- Close previous day group -->
+                        {% endif %}
+                        <div class="day-group">
+                            <div class="day-header">
+                                <span>{{ task['date'] }}</span>
+                            </div>
+                        {% set current_date = task['date'] %}
+                    {% endif %}
+                    
+                    <div class="task-item">
+                        <h3>{{ task['name'] }}</h3>
+                        <p><strong>Time:</strong> {{ task['start_time'] }} - {{ task['end_time'] }} ({{ task['duration'] }} mins)</p>
+                        <p><strong>Priority:</strong> {{ task['priority'].capitalize() }}</p>
+                        <p><strong>Category:</strong> {{ task['category'].capitalize() }}</p>
+                    </div>
+                {% endfor %}
+                </div> <!-- Close last day group -->
+            {% else %}
+                <p>No tasks found in your history.</p>
+            {% endif %}
+        {% endif %}
+        
+        <a href="{{ url_for('home') }}" class="back-button">Back to Planner</a>
+    </div>
+</body>
+</html>
