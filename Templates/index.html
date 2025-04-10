@@ -196,7 +196,13 @@
             {% if current_user.is_authenticated %}
                 <div class="user-info">
                     <span class="username">{{ current_user.username }}</span>
-                    <button class="logout-btn" onclick="window.location.href='{{ url_for('logout') }}'">Logout</button>
+                    <button class="logout-btn" onclick="logout()">Logout</button>
+
+                    <script>
+                    function logout() {
+                        window.location.href = "{{ url_for('logout') }}";
+                    }
+                    </script>
                 </div>
             {% endif %}
         </div>
